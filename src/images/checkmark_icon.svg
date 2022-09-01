@@ -1,0 +1,36 @@
+<svg width="26" height="14" version="1.1" viewBox="0 0 6.8791 3.7042" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter219" x="-.01451" y="-.017852" width="1.0395" height="1.0498" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(0,0,0)" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur" stdDeviation="3.7"/>
+   <feOffset dx="6.4" dy="7" result="offset"/>
+   <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+  </filter>
+  <filter id="filter243" x="-.01451" y="-.017852" width="1.0395" height="1.0498" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(0,0,0)" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur" stdDeviation="3.7"/>
+   <feOffset dx="6.4" dy="7" result="offset"/>
+   <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+  </filter>
+ </defs>
+ <g transform="matrix(.0064414 0 0 .0067345 2.7382 -.18498)" fill="#fff" filter="url(#filter243)">
+  <g fill="#fff">
+   <g fill="#fff">
+    <g fill="#fff">
+     <path d="m589.1 80.63c-30.513-31.125-79.965-31.125-110.48 0l-276.2 281.71-69.061-70.438c-30.513-31.125-79.965-31.125-110.48 0s-30.513 81.572 0 112.68l124.29 126.78c30.513 31.125 79.965 31.125 110.48 0l331.45-338.03c30.515-31.125 30.515-81.572 1e-3 -112.7z" fill="#fff"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(.0064414 0 0 .0067345 .16287 -.2101)" fill="#4daed4" filter="url(#filter219)">
+  <g fill="#4daed4">
+   <g id="_x39__34_" fill="#4daed4">
+    <g fill="#4daed4">
+     <path d="m589.1 80.63c-30.513-31.125-79.965-31.125-110.48 0l-276.2 281.71-69.061-70.438c-30.513-31.125-79.965-31.125-110.48 0s-30.513 81.572 0 112.68l124.29 126.78c30.513 31.125 79.965 31.125 110.48 0l331.45-338.03c30.515-31.125 30.515-81.572 1e-3 -112.7z" fill="#4daed4"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

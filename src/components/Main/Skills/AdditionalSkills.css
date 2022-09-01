@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+  .skills__languages:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.skills__additional-container {
+  list-style-image: url(../../../images/checkmark_icon.svg);
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  padding: 0;
+}
+
+.skills__additional {
+  border: 1px solid rgb(77, 174, 212);
+  background-color: white;
+  color: rgb(31, 30, 30);
+  text-decoration: none;
+  margin: 0 0 10px 35px;
+  border-radius: 4px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 1px 0 rgb(175, 175, 175);
+}
