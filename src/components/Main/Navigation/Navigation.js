@@ -2,37 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import './Navigation.css';
 
-import closeIcon from '../../../images/closeIcon.svg';
-import icon__Toggle from '../../../images/icon__Toggle.svg';
-
 function Navigation(props) {
+  const { popupAboutMe, popupSkills, popupContacts, popups } = props;
   const [isDesktop, setIsDesktop] = useState(
     window.matchMedia('(min-width: 780px)').matches
-  );
-  const [isToggle, setIsToggle] = useState(false);
-  const [isAddInfo, setIsAddInfo] = useState({
-    display: 'none',
-    src: icon__Toggle,
-  });
-
-  const menuLinks = (
-    <ul className='navigation__links'>
-      <li className='navigation__links-item button-hover'>
-        <a className='navigation__link' href='#aboutMe'>
-          о себе
-        </a>
-      </li>
-      <li className='navigation__links-item button-hover'>
-        <a className='navigation__link' href='#expirience'>
-          опыт
-        </a>
-      </li>
-      <li className='navigation__links-item button-hover'>
-        <a className='navigation__link' href='#contacts'>
-          контакты
-        </a>
-      </li>
-    </ul>
   );
 
   //Контроль размера страницы
@@ -45,45 +18,61 @@ function Navigation(props) {
         .removeEventListener('change', handler);
   }, []);
 
-  //Установка формы кнопки навигации
-  useEffect(() => {
-    isToggle
-      ? setIsAddInfo({ display: 'flex', src: closeIcon })
-      : setIsAddInfo({ display: 'none', src: icon__Toggle });
-  }, [isToggle]);
+  function openPopupAboutMe() {
+    popupAboutMe();
+  }
 
-  const toggle = () => {
-    setIsToggle(!isToggle);
-  };
+  function openPopupSkills() {
+    popupSkills();
+  }
+
+  function openPopupContacts() {
+    popupContacts();
+  }
+
   return (
     <div className='navigation'>
-      {menuLinks}
-      <div
-        className='navigation__menu-shadow'
-        style={{ display: isAddInfo.display }}
-      ></div>
-      {isAddInfo.src === closeIcon ? (
-        <div
-          className='navigation__menu'
-          style={{ display: isAddInfo.display }}
+      <ul className='navigation__links'>
+        <li
+          className='navigation__links-item button-hover'
+          onClick={openPopupAboutMe}
         >
-          <img
-            className='navigation__icon navigation__icon-closeIcon button-hover'
-            onClick={toggle}
-            src={`${isAddInfo.src}`}
-            alt='Кнопка'
-          />
-        </div>
-      ) : (
-        !isDesktop && (
-          <img
-            className='navigation__icon button-hover'
-            onClick={toggle}
-            src={`${isAddInfo.src}`}
-            alt='Кнопка'
-          />
-        )
-      )}
+          <a
+            className={`navigation__link ${
+              popups[0] && 'navigation__link_active'
+            }`}
+            href='#aboutMe'
+          >
+            {popups[0] ? 'закрыть' : 'о себе'}
+          </a>
+        </li>
+        <li
+          className='navigation__links-item button-hover'
+          onClick={openPopupSkills}
+        >
+          <a
+            className={`navigation__link ${
+              popups[1] && 'navigation__link_active'
+            }`}
+            href='#skills'
+          >
+            {popups[1] ? 'закрыть' : 'опыт'}
+          </a>
+        </li>
+        <li
+          className='navigation__links-item button-hover'
+          onClick={openPopupContacts}
+        >
+          <a
+            className={`navigation__link ${
+              popups[2] && 'navigation__link_active'
+            }`}
+            href='#contacts'
+          >
+            {popups[2] ? 'закрыть' : 'контакты'}
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

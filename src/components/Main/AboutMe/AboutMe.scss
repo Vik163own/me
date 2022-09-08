@@ -1,0 +1,207 @@
+$shadow-color: rgb(175, 175, 175);
+$shadow-block: 0 0 3px 3px $shadow-color;
+$shadow-border: 0 0 1px 1px $shadow-color;
+$inner-shadow: inset 1px 1px 0 0 $shadow-color;
+$bkg-color: white;
+$text-color: black;
+
+@mixin indent-null {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin block($sw, $smw, $sh, $zi) {
+  position: absolute;
+  display: flex;
+  z-index: $zi;
+  color: $text-color;
+  background-color: $bkg-color;
+  height: $sh;
+  max-width: $smw;
+  width: $sw;
+  box-shadow: $shadow-block;
+}
+
+@mixin links($sw, $smw, $sh) {
+  height: $sh;
+  max-width: $smw;
+  width: $sw;
+  background-color: $bkg-color;
+  box-shadow: $shadow-border;
+  cursor: pointer;
+}
+
+@mixin text($fs, $lh, $fw) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin open-popup($hg) {
+  transform: translateY($hg);
+  transition: 0.5s;
+}
+
+.aboutMe {
+  position: relative;
+  width: 900px;
+}
+
+.aboutMe__additional-info {
+  @include block(100%, 800px, 400px, 2);
+  box-shadow: 0 0 2px 2px $shadow-color;
+  left: calc((100% - 800px) / 2);
+
+  @include open-popup(0);
+}
+
+.aboutMe__additional-info-isPopupAboutMe {
+  @include open-popup(430px);
+}
+
+.aboutMe__additional-info-isPopupSkills {
+  @include open-popup(430px);
+}
+
+.aboutMe__additional-info-isPopupContacts {
+  @include open-popup(430px);
+}
+
+.aboutMe__main-info {
+  @include block(100%, 900px, 419px, 3);
+
+  .aboutMe__image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% / 3);
+    margin: 25px 0;
+
+    .aboutMe__foto {
+      max-height: 300px;
+      height: 100%;
+      max-width: 240px;
+      width: 100%;
+      object-fit: cover;
+      box-shadow: $shadow-block;
+    }
+
+    .aboutMe__download {
+      $text: 14px;
+      font-size: $text;
+      border-style: none;
+      @include indent-null();
+      @include flex-center();
+      @include links(100%, 240px, 40px);
+
+      &:active {
+        font-size: $text - 0.5px;
+        border: 1px solid $shadow-color;
+        box-shadow: $inner-shadow;
+      }
+    }
+    .aboutMe__download-icon {
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  .aboutMe__description-container {
+    width: 67%;
+    position: relative;
+    margin: 25px 0;
+
+    .aboutMe__title {
+      @include text(32px, 32px, 500);
+      letter-spacing: -2px;
+      margin: 0 0 10px;
+    }
+
+    .aboutMe__title-name {
+      color: rgb(77, 174, 212);
+    }
+
+    .aboutMe__subtitle {
+      @include text(20px, 22px, 500);
+      @include indent-null();
+    }
+
+    .aboutMe__description {
+      @include text(14px, 22px, 400);
+      max-width: 500px;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    .aboutMe__contacts {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      width: 96%;
+      @include indent-null();
+    }
+
+    .aboutMe__contact {
+      color: rgb(107, 107, 107);
+      position: relative;
+      width: 50%;
+      @include text(14px, 30px, 400);
+      @include indent-null();
+    }
+
+    .aboutMe__contacts-data {
+      color: $text-color;
+      font-weight: 500;
+      position: absolute;
+      left: 35%;
+    }
+
+    .aboutMe__navbar {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px 20px 0 0;
+    }
+
+    .aboutMe__navbar-links {
+      display: flex;
+      list-style: none;
+      @include indent-null();
+    }
+
+    .aboutMe__navbar-link {
+      margin-right: 20px;
+      @include links(20px, 20px, 20px);
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    .aboutMe__link {
+      @include flex-center();
+      color: $text-color;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+
+      &:active {
+        box-shadow: $inner-shadow;
+      }
+
+      &:hover .aboutMe__link-icon {
+        opacity: 0.8;
+      }
+    }
+
+    .aboutMe__link-icon {
+      width: 14px;
+    }
+  }
+}
