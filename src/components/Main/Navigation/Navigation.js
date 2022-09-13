@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import './Navigation.css';
+import './Navigation.scss';
 
 function Navigation(props) {
   const { popupAboutMe, popupSkills, popupContacts, popups } = props;

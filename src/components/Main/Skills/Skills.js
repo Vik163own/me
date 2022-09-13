@@ -1,9 +1,26 @@
 import React from 'react';
-
-import './SpecialSkills.css';
-import './AdditionalSkills.css';
+import './SpecialSkills.scss';
 
 function Skills() {
+  const skillsElement = (name, procents) => {
+    return (
+      <li
+        className='skills__special'
+        onMouseEnter={() => {
+          handleScale(procents);
+        }}
+      >
+        <div className='skills__special-procents'>{procents}</div>
+        <div className='skills__special-shadow' />
+        {name}
+      </li>
+    );
+  };
+
+  function handleScale(procents) {
+    document.documentElement.style.setProperty('--scale', procents);
+  }
+
   return (
     <section className='skills' id='skillsId'>
       <h2 className='skills__title'>НАВЫКИ</h2>
@@ -11,22 +28,21 @@ function Skills() {
         <h3 className='skills__subtitle'>ПРОФЕССИОНАЛЬНЫЕ</h3>
         <h3 className='skills__subtitle'>ДОПОЛНИТЕЛЬНЫЕ</h3>
         <ul className='skills__special-container'>
-          <li className='skills__special'>JS</li>
-          <li className='skills__special'>React</li>
-          <li className='skills__special'>HTML & CSS</li>
-          <li className='skills__special'>Адаптивная верстка</li>
-          <li className='skills__special'>Express.js</li>
-          <li className='skills__special'>mongoDB</li>
-          <li className='skills__special'>Git</li>
+          {skillsElement('JS', '10%')}
+          {skillsElement('React', '40%')}
+          {skillsElement('HTML & CSS & SCSS', '60%')}
+          {skillsElement('Адаптивная верстка', '50%')}
+          {skillsElement('Express.js', '20%')}
+          {skillsElement('MongoDB', '70%')}
+          {skillsElement('Git', '70%')}
         </ul>
         <ul className='skills__additional-container'>
-          <li className='skills__additional'>Figma</li>
-          <li className='skills__additional'>Adobe Photoshop</li>
-          <li className='skills__additional'>Растровая графика</li>
-          <li className='skills__additional'>Дизайн логотипов</li>
-          <li className='skills__additional'>Дизайн иконок</li>
-          <li className='skills__additional'>Дизайн наружной рекламы</li>
-          <li className='skills__additional'>Создание визиток</li>
+          {skillsElement('Figma', '70%')}
+          {skillsElement('Adobe Photoshop', '70%')}
+          {skillsElement('Растровая графика', '70%')}
+          {skillsElement('Векторная графика', '70%')}
+          {skillsElement('Дизайн логотипов', '70%')}
+          {skillsElement('Дизайн иконок', '55%')}
         </ul>
       </div>
     </section>

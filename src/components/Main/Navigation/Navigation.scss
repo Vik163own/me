@@ -1,0 +1,47 @@
+@import '../../../utils/constants.scss';
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  z-index: 2;
+
+  .navigation__links {
+    @include indent-null();
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__links-item {
+    width: 30%;
+    margin-right: 10px;
+    background-color: $bkg-color;
+    box-shadow: $shadow-border;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .navigation__link {
+    @include flex-center();
+    @include text(13px, 14px, 400);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: $text-color;
+    &:focus {
+      font-weight: 500;
+      opacity: 1;
+    }
+  }
+
+  .navigation__link_active {
+    font-size: 11.5px;
+    background-color: rgb(240, 241, 241);
+    box-shadow: $inner-shadow;
+    transition: 0.5s;
+  }
+}

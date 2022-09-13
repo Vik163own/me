@@ -1,0 +1,44 @@
+$shadow-color: rgb(175, 175, 175);
+$shadow-block: 0 0 2px 2px $shadow-color;
+$shadow-border: 0 0 1px 1px $shadow-color;
+$inner-shadow: inset 1px 1px 0 0 $shadow-color;
+$bkg-color: white;
+$text-color: black;
+
+@mixin block($sw, $smw, $sh, $zi) {
+  position: absolute;
+  display: flex;
+  z-index: $zi;
+  color: $text-color;
+  background-color: $bkg-color;
+  height: $sh;
+  max-width: $smw;
+  width: $sw;
+  box-shadow: $shadow-block;
+}
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin links($sw, $smw, $sh) {
+  height: $sh;
+  max-width: $smw;
+  width: $sw;
+  background-color: $bkg-color;
+  box-shadow: $shadow-border;
+  cursor: pointer;
+}
+
+@mixin text($fs, $lh, $fw) {
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+@mixin indent-null {
+  padding: 0;
+  margin: 0;
+}
