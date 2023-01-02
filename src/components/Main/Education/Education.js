@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Education.scss';
+import './education.scss';
 
 import sheet from '../../../images/sheet_pen.svg';
 import university from '../../../images/university.svg';

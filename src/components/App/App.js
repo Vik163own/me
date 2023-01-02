@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './App.css';
+import './app.css';
 
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
-import Main from '../Main/Main.js';
+import Header from '../header/header.js';
+import Footer from '../footer/footer.js';
+import Main from '../main/main.js';
 
 function App() {
   return (

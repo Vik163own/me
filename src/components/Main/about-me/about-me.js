@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-import './AboutMeAdditional';
-import './AboutMe.css';
-import './AboutMe.scss';
+import './about-me-additional';
+import './about-me.css';
+import './about-me.scss';
 
-import Navigation from '../Navigation/Navigation';
+import Navigation from '../navigation/navigation';
 
 import foto from '../../../images/me.jpg';
 import downloadIcon from '../../../images/download_icon.svg';
 import vkIcon from '../../../images/vk_icon.svg';
 import gitIcon from '../../../images/github_icon.svg';
 import telegramIcon from '../../../images/telegram_icon.svg';
-import AboutMeAdditional from './AboutMeAdditional';
+import AboutMeAdditional from './about-me-additional';
 
 function AboutMe() {
   const [isPopupAboutMe, setIsPopupAboutMe] = useState(false);
