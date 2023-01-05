@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './navigation.scss';
 
-function Navigation(props) {
-  const { popupAboutMe, popupSkills, popupContacts, popups } = props;
+function Navigation({ handleAddInfo, isNameAddInfo }) {
   const [isDesktop, setIsDesktop] = useState(
     window.matchMedia('(min-width: 780px)').matches
   );
@@ -18,58 +17,57 @@ function Navigation(props) {
         .removeEventListener('change', handler);
   }, []);
 
-  function openPopupAboutMe() {
-    popupAboutMe();
-  }
-
-  function openPopupSkills() {
-    popupSkills();
-  }
-
-  function openPopupContacts() {
-    popupContacts();
+  function addInfo(e) {
+    const valueButton = e.target.textContent;
+    switch (valueButton) {
+      case 'о себе':
+        handleAddInfo('about-me');
+        break;
+      case 'опыт':
+        handleAddInfo('skills');
+        break;
+      case 'контакты':
+        handleAddInfo('contacts');
+        break;
+      case 'закрыть':
+        handleAddInfo('');
+        break;
+      default:
+        alert('');
+    }
   }
 
   return (
     <div className='navigation'>
       <ul className='navigation__links'>
-        <li
-          className='navigation__links-item button-hover'
-          onClick={openPopupAboutMe}
-        >
+        <li className='navigation__links-item button-hover' onClick={addInfo}>
           <a
             className={`navigation__link ${
-              popups[0] && 'navigation__link_active'
+              isNameAddInfo === 'about-me' && 'navigation__link_active'
             }`}
             href='#aboutMe'
           >
-            {popups[0] ? 'закрыть' : 'о себе'}
+            {isNameAddInfo === 'about-me' ? 'закрыть' : 'о себе'}
           </a>
         </li>
-        <li
-          className='navigation__links-item button-hover'
-          onClick={openPopupSkills}
-        >
+        <li className='navigation__links-item button-hover' onClick={addInfo}>
           <a
             className={`navigation__link ${
-              popups[1] && 'navigation__link_active'
+              isNameAddInfo === 'skills' && 'navigation__link_active'
             }`}
             href='#skills'
           >
-            {popups[1] ? 'закрыть' : 'опыт'}
+            {isNameAddInfo === 'skills' ? 'закрыть' : 'опыт'}
           </a>
         </li>
-        <li
-          className='navigation__links-item button-hover'
-          onClick={openPopupContacts}
-        >
+        <li className='navigation__links-item button-hover' onClick={addInfo}>
           <a
             className={`navigation__link ${
-              popups[2] && 'navigation__link_active'
+              isNameAddInfo === 'contacts' && 'navigation__link_active'
             }`}
             href='#contacts'
           >
-            {popups[2] ? 'закрыть' : 'контакты'}
+            {isNameAddInfo === 'contacts' ? 'закрыть' : 'контакты'}
           </a>
         </li>
       </ul>

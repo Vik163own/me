@@ -26,12 +26,7 @@ function Skills() {
         <h3 className='skills__subtitle'>ДОПОЛНИТЕЛЬНЫЕ</h3>
         <ul className='skills__additional-container'>
           {scillsAdditionalInfo.map((item, index) => (
-            <SkillsElement
-              key={index}
-              name={item.name}
-              procents={item.procents}
-              caption={item.caption}
-            />
+            <SkillsElement key={index} name={item.name} />
           ))}
         </ul>
       </div>

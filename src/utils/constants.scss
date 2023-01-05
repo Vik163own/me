@@ -42,3 +42,8 @@ $text-color: black;
   padding: 0;
   margin: 0;
 }
+
+@mixin open-popup($hg) {
+  transform: translateY($hg);
+  transition: 0.5s;
+}

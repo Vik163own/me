@@ -14,64 +14,30 @@ import telegramIcon from '../../../images/telegram_icon.svg';
 import AboutMeAdditional from './about-me-additional';
 
 function AboutMe() {
-  const [isPopupAboutMe, setIsPopupAboutMe] = useState(false);
-  const [isPopupSkills, setIsPopupSkills] = useState(false);
-  const [isPopupContacts, setIsPopupContacts] = useState(false);
-  const [classPopup, setClassPopup] = useState('');
-  const popups = [isPopupAboutMe, isPopupSkills, isPopupContacts];
+  const [isAddInfoOpen, setIsAddInfoOpen] = useState(false);
+  const [isNameAddInfo, setIsNameAddInfo] = useState('');
+  const [classAddInfo, setClassAddInfo] = useState('');
 
-  const handlePopups = (namePopup, isPopup, setIsPopup) => {
-    let popup = popups.find((item) => item === true);
-    if (popup) {
-      closePopups();
+  const handleAddInfo = (name) => {
+    setIsNameAddInfo(name);
 
+    if (isAddInfoOpen && name) {
+      setClassAddInfo('');
       setTimeout(() => {
-        setClassPopup(`aboutMe__additional-info-${namePopup}`);
-        setIsPopup(!isPopup);
+        setClassAddInfo(`aboutMe__additional-info-${name}`);
+        setIsAddInfoOpen(true);
       }, 500);
     } else {
-      setClassPopup(`aboutMe__additional-info-${namePopup}`);
-      setIsPopup(!isPopup);
+      setClassAddInfo(`aboutMe__additional-info-${name}`);
+      setIsAddInfoOpen(!isAddInfoOpen);
     }
   };
 
-  function popupAboutMe() {
-    if (isPopupAboutMe) {
-      closePopups();
-    } else {
-      handlePopups('isPopupAboutMe', isPopupAboutMe, setIsPopupAboutMe);
-    }
-  }
-
-  function popupSkills() {
-    if (isPopupSkills) {
-      closePopups();
-    } else {
-      handlePopups('isPopupSkills', isPopupSkills, setIsPopupSkills);
-    }
-  }
-
-  function popupContacts() {
-    if (isPopupContacts) {
-      closePopups();
-    } else {
-      handlePopups('isPopupContacts', isPopupContacts, setIsPopupContacts);
-    }
-  }
-
-  function closePopups() {
-    setIsPopupSkills(false);
-    setIsPopupContacts(false);
-    setIsPopupAboutMe(false);
-    setClassPopup('');
-  }
-
   useEffect(() => {
-    if (!popups.some((item) => item === true)) return;
-    // объявляем внутри `useEffect` функцию, чтобы она не теряла ссылку при перерисовке компонента
+    if (!isAddInfoOpen) return;
     const closeByEscape = (e) => {
       if (e.key === 'Escape' || e.target === e.currentTarget) {
-        closePopups();
+        handleAddInfo('');
       }
     };
 
@@ -83,11 +49,14 @@ function AboutMe() {
         .querySelector('.main')
         .removeEventListener('click', closeByEscape);
     };
-  }, [popups]);
+  }, [isAddInfoOpen]);
 
   return (
     <section className='aboutMe' id='aboutMeId'>
-      <AboutMeAdditional classPopup={classPopup} popups={popups} />
+      <AboutMeAdditional
+        classAddInfo={classAddInfo}
+        isNameAddInfo={isNameAddInfo}
+      />
       <div className='aboutMe__main-info'>
         <div className='aboutMe__image-container'>
           <img className='aboutMe__foto' src={foto} alt='фото' />
@@ -184,10 +153,8 @@ function AboutMe() {
               </li>
             </ul>
             <Navigation
-              popupAboutMe={popupAboutMe}
-              popupSkills={popupSkills}
-              popupContacts={popupContacts}
-              popups={popups}
+              handleAddInfo={handleAddInfo}
+              isNameAddInfo={isNameAddInfo}
             />
           </div>
         </div>

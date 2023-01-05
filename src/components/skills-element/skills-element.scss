@@ -69,14 +69,17 @@
   text-align: center;
   box-shadow: 1px 1px 1px 0 $shadow-color;
 
-  &:before {
+  &::before {
     content: '';
-    border: solid transparent;
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    border-bottom-color: white;
-    border-width: 6px;
-    margin-left: -6px;
+    top: -5px;
+    left: calc(50% - 5px);
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border: 1px solid rgb(212, 187, 77);
+    border-color: rgb(212, 187, 77) transparent transparent rgb(212, 187, 77);
+    transform: rotate(45deg);
+    z-index: -1;
   }
 }

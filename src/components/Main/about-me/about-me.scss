@@ -1,10 +1,5 @@
 @import '../../../utils/constants.scss';
 
-@mixin open-popup($hg) {
-  transform: translateY($hg);
-  transition: 0.5s;
-}
-
 .aboutMe {
   position: relative;
   width: 900px;
@@ -18,15 +13,19 @@
   @include open-popup(0);
 }
 
-.aboutMe__additional-info-isPopupAboutMe {
+.aboutMe__additional-info-link-style {
+  max-width: 1200px;
+}
+
+.aboutMe__additional-info-about-me {
   @include open-popup(430px);
 }
 
-.aboutMe__additional-info-isPopupSkills {
+.aboutMe__additional-info-skills {
   @include open-popup(430px);
 }
 
-.aboutMe__additional-info-isPopupContacts {
+.aboutMe__additional-info-contacts {
   @include open-popup(430px);
 }
 

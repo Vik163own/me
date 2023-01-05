@@ -6,8 +6,12 @@ export const SkillsElement = ({ name, procents, caption }) => {
   const [isHover, setIsHover] = useState(false);
 
   function handleScale(procents) {
-    setIsHover(true);
-    document.documentElement.style.setProperty('--scale', procents);
+    if (caption) {
+      setIsHover(true);
+      document.documentElement.style.setProperty('--scale', procents);
+    } else {
+      document.documentElement.style.setProperty('--scale', 0);
+    }
   }
 
   return (
