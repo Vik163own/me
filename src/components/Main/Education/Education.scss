@@ -9,61 +9,15 @@
     @include text(32px, 32px, 500);
     color: rgb(77, 174, 212);
     letter-spacing: -2px;
-    margin: 70px 0 70px;
+    margin: 70px 0 60px;
   }
 
   .education__container {
     @include indent-null();
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(2, 425px);
     grid-template-rows: fit-content(361px);
     gap: 25px 50px;
-  }
-
-  .education__description {
-    position: relative;
-    background-color: $bkg-color;
-    box-shadow: $shadow-block;
-    padding: 68px 20px 20px;
-  }
-
-  .education__ribbon-years {
-    position: absolute;
-    top: 20px;
-    left: -20px;
-    background: rgb(77, 174, 212);
-    padding: 5px 30px;
-    box-shadow: 1px 1px 5px #878787;
-    color: $bkg-color;
-    &:after {
-      content: '';
-      position: absolute;
-      top: 104%;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-top: 6px solid #a1a1a1;
-    }
-  }
-
-  .education__info {
-    @include text(14px, 16px, 400);
-    display: flex;
-    align-items: center;
-    margin: 0 0 10px 0;
-    &:nth-of-type(2) {
-      margin: 0;
-    }
-  }
-
-  .education__info-text {
-    margin-left: 5px;
-  }
-
-  .education__description-text {
-    @include text(13px, 20px, 500);
-    margin-top: 20px;
   }
 }

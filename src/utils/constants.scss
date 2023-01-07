@@ -43,7 +43,7 @@ $text-color: black;
   margin: 0;
 }
 
-@mixin open-popup($hg) {
+@mixin open-info($hg) {
   transform: translateY($hg);
   transition: 0.5s;
 }

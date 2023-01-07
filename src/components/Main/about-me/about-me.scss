@@ -6,27 +6,23 @@
 }
 
 .aboutMe__additional-info {
-  @include block(100%, 800px, 400px, 2);
+  @include block(100%, 900px, 400px, 2);
   box-shadow: 0 0 2px 2px $shadow-color;
-  left: calc((100% - 800px) / 2);
+  left: calc((100% - 900px) / 2);
 
-  @include open-popup(0);
-}
-
-.aboutMe__additional-info-link-style {
-  max-width: 1200px;
+  @include open-info(0);
 }
 
 .aboutMe__additional-info-about-me {
-  @include open-popup(430px);
+  @include open-info(430px);
 }
 
 .aboutMe__additional-info-skills {
-  @include open-popup(430px);
+  @include open-info(430px);
 }
 
 .aboutMe__additional-info-contacts {
-  @include open-popup(430px);
+  @include open-info(430px);
 }
 
 .aboutMe__main-info {
@@ -121,7 +117,7 @@
 
     .aboutMe__navbar {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 25px 20px 0 0;
     }
 

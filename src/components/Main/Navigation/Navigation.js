@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './navigation.scss';
 
-function Navigation({ handleAddInfo, isNameAddInfo }) {
+export function Navigation({ handleAddInfo, isNameAddInfo }) {
   const [isDesktop, setIsDesktop] = useState(
     window.matchMedia('(min-width: 780px)').matches
   );
@@ -39,40 +39,26 @@ function Navigation({ handleAddInfo, isNameAddInfo }) {
 
   return (
     <div className='navigation'>
-      <ul className='navigation__links'>
-        <li className='navigation__links-item button-hover' onClick={addInfo}>
-          <a
-            className={`navigation__link ${
-              isNameAddInfo === 'about-me' && 'navigation__link_active'
+      <ul className='navigation__buttons'>
+        <li className='navigation__buttons-item button-hover' onClick={addInfo}>
+          <button
+            className={`navigation__button ${
+              isNameAddInfo === 'about-me' && 'navigation__button_active'
             }`}
-            href='#aboutMe'
           >
             {isNameAddInfo === 'about-me' ? 'закрыть' : 'о себе'}
-          </a>
+          </button>
         </li>
-        <li className='navigation__links-item button-hover' onClick={addInfo}>
-          <a
-            className={`navigation__link ${
-              isNameAddInfo === 'skills' && 'navigation__link_active'
+        <li className='navigation__buttons-item button-hover' onClick={addInfo}>
+          <button
+            className={`navigation__button ${
+              isNameAddInfo === 'skills' && 'navigation__button_active'
             }`}
-            href='#skills'
           >
             {isNameAddInfo === 'skills' ? 'закрыть' : 'опыт'}
-          </a>
-        </li>
-        <li className='navigation__links-item button-hover' onClick={addInfo}>
-          <a
-            className={`navigation__link ${
-              isNameAddInfo === 'contacts' && 'navigation__link_active'
-            }`}
-            href='#contacts'
-          >
-            {isNameAddInfo === 'contacts' ? 'закрыть' : 'контакты'}
-          </a>
+          </button>
         </li>
       </ul>
     </div>
   );
 }
-
-export default Navigation;

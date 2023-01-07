@@ -1,0 +1,82 @@
+@import '../../../utils/constants.scss';
+
+.education__element {
+  position: relative;
+  background-color: $bkg-color;
+  box-shadow: $shadow-block;
+  padding: 100px 20px 20px;
+}
+
+.education__ribbon {
+  max-width: 350px;
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  font-size: 20px;
+  background: rgb(77, 174, 212);
+  padding: 5px 30px;
+  box-shadow: 1px 1px 5px #878787;
+  color: $bkg-color;
+  box-sizing: border-box;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 102%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-top: 6px solid #a1a1a1;
+  }
+  &-specialization {
+    font-style: italic;
+    font-size: 18px;
+    margin: 5px 0 0 60px;
+  }
+}
+
+.education__button {
+  @include text(14px, 16px, 400);
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+  background-color: white;
+  border: none;
+  padding: 0;
+  color: rgb(2, 92, 134);
+  cursor: pointer;
+  &:nth-of-type(2) {
+    margin: 0;
+  }
+  &-text {
+    margin: 0 0 0 5px;
+    cursor: pointer;
+  }
+  &-icon {
+    width: 15px;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.education__info {
+  @include text(14px, 16px, 400);
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  &:nth-of-type(2) {
+    margin: 0;
+  }
+}
+
+.education__info-text {
+  margin-left: 5px;
+}
+
+.education__description {
+  @include text(13px, 20px, 500);
+  margin-top: 20px;
+}

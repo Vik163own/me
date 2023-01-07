@@ -4,14 +4,14 @@ import './about-me-additional';
 import './about-me.css';
 import './about-me.scss';
 
-import Navigation from '../navigation/navigation';
+import { Navigation } from '../navigation/navigation';
 
 import foto from '../../../images/me.jpg';
 import downloadIcon from '../../../images/download_icon.svg';
 import vkIcon from '../../../images/vk_icon.svg';
 import gitIcon from '../../../images/github_icon.svg';
 import telegramIcon from '../../../images/telegram_icon.svg';
-import AboutMeAdditional from './about-me-additional';
+import { AboutMeAdditional } from './about-me-additional';
 
 function AboutMe() {
   const [isAddInfoOpen, setIsAddInfoOpen] = useState(false);
