@@ -36,12 +36,9 @@ export function EducationElement({ card }) {
   return (
     <>
       <li className='education__element'>
-        <div className='education__ribbon'>
-          {card.name}
-          <p className='education__ribbon-specialization'>
-            {card.specialization}
-          </p>
-        </div>
+        <h3 className='education__title-item'>{card.name}</h3>
+        <p className='education__specialization'>{card.specialization}</p>
+        <p className='education__dates'>{card.dates}</p>
         <button
           className='education__button'
           data-id={card.dataId}
@@ -49,12 +46,20 @@ export function EducationElement({ card }) {
           onBlur={null}
           type='button'
         >
-          <img className='education__button-icon' src={sheet} alt='sheet' />
+          <img className='education__icon' src={sheet} alt='sheet' />
           <p className='education__button-text'>Диплом</p>
         </button>
         <p className='education__info'>
-          <img src={university} alt='sheet' />
-          <span className='education__info-text'>Дипломный проект</span>
+          <img className='education__icon' src={university} alt='sheet' />
+          Дипломный проект
+          <a
+            className='education__link'
+            href={card.gh}
+            target='_blank'
+            rel='noreferrer'
+          >
+            {card.project}
+          </a>
         </p>
         <p className='education__description'>{card.description}</p>
       </li>

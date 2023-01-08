@@ -4,36 +4,24 @@
   position: relative;
   background-color: $bkg-color;
   box-shadow: $shadow-block;
-  padding: 100px 20px 20px;
+  padding: 20px;
 }
 
-.education__ribbon {
-  max-width: 350px;
-  position: absolute;
-  top: 20px;
-  left: -15px;
-  font-size: 20px;
-  background: rgb(77, 174, 212);
-  padding: 5px 30px;
-  box-shadow: 1px 1px 5px #878787;
-  color: $bkg-color;
-  box-sizing: border-box;
+.education__title-item {
+  margin: 0;
+  color: rgb(77, 174, 212);
+}
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 102%;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-top: 6px solid #a1a1a1;
-  }
-  &-specialization {
-    font-style: italic;
-    font-size: 18px;
-    margin: 5px 0 0 60px;
-  }
+.education__specialization {
+  font-style: italic;
+  font-size: 16px;
+  margin: 10px 0 15px;
+}
+
+.education__dates {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 0;
 }
 
 .education__button {
@@ -50,16 +38,19 @@
     margin: 0;
   }
   &-text {
-    margin: 0 0 0 5px;
     cursor: pointer;
+    margin: 0;
   }
-  &-icon {
-    width: 15px;
-  }
+
   &:focus {
     outline: none;
     box-shadow: none;
   }
+}
+
+.education__icon {
+  margin-right: 5px;
+  width: 15px;
 }
 
 .education__info {
@@ -72,11 +63,14 @@
   }
 }
 
-.education__info-text {
+.education__link {
+  text-decoration: none;
   margin-left: 5px;
+  color: rgb(2, 48, 134);
 }
 
 .education__description {
   @include text(13px, 20px, 500);
   margin-top: 20px;
+  margin-top: 5px;
 }
