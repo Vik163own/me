@@ -1,20 +1,32 @@
 export const scillsSpecialInfo = [
-  { name: 'HTML', procents: '10%', caption: ['js', 'js', 'js'] },
+  { name: 'HTML', procents: null, caption: null },
   { name: 'JS', procents: '10%', caption: ['js', 'js', 'js'] },
-  { name: 'Express.js', procents: '10%', caption: ['js', 'js', 'js'] },
-  { name: 'CSS & SCSS', procents: '10%', caption: ['js', 'js', 'js'] },
+  {
+    name: 'Express.js',
+    procents: null,
+    caption: ['Роутинг', 'middlewares', 'CORS'],
+  },
+  {
+    name: 'CSS',
+    procents: null,
+    caption: ['flex', 'grid', 'module', 'немного SCSS'],
+  },
   { name: 'React', procents: '10%', caption: ['js', 'js', 'js'] },
-  { name: 'MongoDB', procents: '10%', caption: ['js', 'js', 'js'] },
+  { name: 'MongoDB', procents: null, caption: ['Mongoose'] },
   {
     name: 'Адаптивная верстка',
     procents: '10%',
-    caption: ['js', 'js', 'js'],
+    caption: ['резиновая', 'адаптивная'],
   },
   { name: 'Redux', procents: '10%', caption: ['js', 'js', 'js'] },
-  { name: 'WebSocket', procents: '10%', caption: ['js', 'js', 'js'] },
-  { name: 'Git', procents: '10%', caption: ['js', 'js', 'js'] },
+  { name: 'WebSocket', procents: null, caption: null },
+  { name: 'Git', procents: null, caption: null },
   { name: 'TypeScript', procents: '10%', caption: ['js', 'js', 'js'] },
-  { name: 'Деплой бэкенда', procents: '10%', caption: ['js', 'js', 'js'] },
+  {
+    name: 'Деплой бэкенда',
+    procents: null,
+    caption: ['Создание сервера', 'pm2', 'nginx', 'CORS'],
+  },
 ];
 
 export const scillsAdditionalInfo = [
@@ -41,11 +53,11 @@ export const courses = [
     dataId: 'web',
     name: 'Яндекс Практикум',
     specialization: '- веб-разработчик',
-    dates: 'Время обучения - 11.2021 - 08.2022',
+    dates: 'Время обучения - 11.2021 - 09.2022',
     project: '- movies-explorer',
     gh: 'https://github.com/Vik163/movies-explorer-frontend',
     description:
-      'Составление плана, работу над бэкендом, вёрстку, добавление функциональности и финальные доработки.',
+      'Составление плана, работа над бэкендом, вёрстка, добавление функциональности и финальные доработки.',
   },
 ];
 

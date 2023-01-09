@@ -25,7 +25,13 @@ export const SkillsElement = ({ name, procents, caption }) => {
       <div className='skills__special-procents'>{procents}</div>
       <div className='skills__special-shadow' />
       {name}
-      {isHover && <div className='scills__caption'>{caption}</div>}
+      {isHover && caption && (
+        <ul className='scills__caption'>
+          {caption.map((i, index) => (
+            <li key={index}>{i}</li>
+          ))}
+        </ul>
+      )}
     </li>
   );
 };

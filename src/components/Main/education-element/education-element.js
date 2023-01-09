@@ -16,6 +16,10 @@ export function EducationElement({ card }) {
     setIsOpen(true);
   };
 
+  const closePopup = (e) => {
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     if (!isOpen) return;
     const closeByEscape = (e) => {
@@ -63,7 +67,7 @@ export function EducationElement({ card }) {
         </p>
         <p className='education__description'>{card.description}</p>
       </li>
-      <Diplomas name={name} isOpen={isOpen} />
+      <Diplomas name={name} isOpen={isOpen} closePopup={closePopup} />
     </>
   );
 }
