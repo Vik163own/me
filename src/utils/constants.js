@@ -1,6 +1,10 @@
 export const scillsSpecialInfo = [
   { name: 'HTML', procents: null, caption: null },
-  { name: 'JS', procents: '10%', caption: ['js', 'js', 'js'] },
+  {
+    name: 'JS',
+    procents: null,
+    caption: ['DOM', 'ООП', 'События', 'Валидация форм'],
+  },
   {
     name: 'Express.js',
     procents: null,
@@ -11,17 +15,35 @@ export const scillsSpecialInfo = [
     procents: null,
     caption: ['flex', 'grid', 'module', 'немного SCSS'],
   },
-  { name: 'React', procents: '10%', caption: ['js', 'js', 'js'] },
+  {
+    name: 'React',
+    procents: null,
+    caption: [
+      'Функциональные компоненты',
+      'Классовые компоненты',
+      'Хуки',
+      'PropTypes',
+      'Drag and Drop',
+    ],
+  },
   { name: 'MongoDB', procents: null, caption: ['Mongoose'] },
   {
     name: 'Адаптивная верстка',
-    procents: '10%',
+    procents: null,
     caption: ['резиновая', 'адаптивная'],
   },
-  { name: 'Redux', procents: '10%', caption: ['js', 'js', 'js'] },
+  {
+    name: 'Redux',
+    procents: null,
+    caption: ['store', 'actions', 'reducers', 'redux-thunk'],
+  },
   { name: 'WebSocket', procents: null, caption: null },
   { name: 'Git', procents: null, caption: null },
-  { name: 'TypeScript', procents: '10%', caption: ['js', 'js', 'js'] },
+  {
+    name: 'TypeScript',
+    procents: null,
+    caption: ['interface и type', 'Generic Functions', 'Typescript в Redux'],
+  },
   {
     name: 'Деплой бэкенда',
     procents: null,

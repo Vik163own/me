@@ -19,16 +19,16 @@ function AboutMe() {
   const [classAddInfo, setClassAddInfo] = useState('');
 
   const handleAddInfo = (name) => {
-    setIsNameAddInfo(name);
-
     if (isAddInfoOpen && name) {
       setClassAddInfo('');
       setTimeout(() => {
         setClassAddInfo(`aboutMe__additional-info-${name}`);
+        setIsNameAddInfo(name);
         setIsAddInfoOpen(true);
       }, 500);
     } else {
       setClassAddInfo(`aboutMe__additional-info-${name}`);
+      setIsNameAddInfo(name);
       setIsAddInfoOpen(!isAddInfoOpen);
     }
   };
@@ -79,10 +79,11 @@ function AboutMe() {
           </h2>
           <p className='aboutMe__subtitle'>веб-разработчик</p>
           <p className='aboutMe__description'>
-            zzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-            zzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.
+            &nbsp;Разработка увлекла! Нашлось дело, которому я рад отдавать
+            всего себя! Нет чувства рутины, нет усталости. Есть желание
+            развиваться! Создавать продукты, которыми будут пользоваться люди!
+            Творить! Созидать! Я, человек открытый к новым знаниям и не боюсь
+            перемен! Уверен, что смогу стать частью команды и приносить пользу!
           </p>
           <ul className='aboutMe__contacts'>
             <li className='aboutMe__contact'>
@@ -103,13 +104,13 @@ function AboutMe() {
               <span className='aboutMe__contacts-data'>+7 927 267 90 44</span>
             </li>
             <li className='aboutMe__contact'>
-              Веб-сайт{' '}
-              <span className='aboutMe__contacts-data'>www@www.ru</span>
+              &nbsp;
+              <span className='aboutMe__contacts-data'></span>
             </li>
           </ul>
           <div className='aboutMe__navbar'>
             <ul className='aboutMe__navbar-links'>
-              <li className='aboutMe__navbar-link button-hover'>
+              {/* <li className='aboutMe__navbar-link button-hover'>
                 <a
                   className='aboutMe__link'
                   href='https://vk.com/'
@@ -122,11 +123,11 @@ function AboutMe() {
                     alt='ВКонтакте'
                   />
                 </a>
-              </li>
+              </li> */}
               <li className='aboutMe__navbar-link button-hover'>
                 <a
                   className='aboutMe__link'
-                  href='https://github.com/'
+                  href='https://github.com//Vik163'
                   target='_blank'
                   rel='noreferrer'
                 >
