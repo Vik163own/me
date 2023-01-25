@@ -19,17 +19,24 @@ function AboutMe() {
   const [classAddInfo, setClassAddInfo] = useState('');
 
   const handleAddInfo = (name) => {
-    if (isAddInfoOpen && name) {
-      setClassAddInfo('');
+    setClassAddInfo('');
+
+    if (!isAddInfoOpen && name) {
+      setClassAddInfo(`aboutMe__additional-info-${name}`);
+      setIsNameAddInfo(name);
+    }
+    if (name) {
       setTimeout(() => {
         setClassAddInfo(`aboutMe__additional-info-${name}`);
         setIsNameAddInfo(name);
         setIsAddInfoOpen(true);
-      }, 500);
-    } else {
-      setClassAddInfo(`aboutMe__additional-info-${name}`);
-      setIsNameAddInfo(name);
-      setIsAddInfoOpen(!isAddInfoOpen);
+      }, 200);
+    } else if (!name) {
+      setTimeout(() => {
+        setClassAddInfo(`aboutMe__additional-info-${name}`);
+        setIsNameAddInfo(name);
+        setIsAddInfoOpen(!isAddInfoOpen);
+      }, 200);
     }
   };
 
@@ -110,20 +117,6 @@ function AboutMe() {
           </ul>
           <div className='aboutMe__navbar'>
             <ul className='aboutMe__navbar-links'>
-              {/* <li className='aboutMe__navbar-link button-hover'>
-                <a
-                  className='aboutMe__link'
-                  href='https://vk.com/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <img
-                    className='aboutMe__link-icon'
-                    src={vkIcon}
-                    alt='ВКонтакте'
-                  />
-                </a>
-              </li> */}
               <li className='aboutMe__navbar-link button-hover'>
                 <a
                   className='aboutMe__link'

@@ -8,29 +8,29 @@
 .aboutMe__additional-info {
   box-sizing: border-box;
   @include block(100%, 900px, auto, 2);
-  box-shadow: 0 0 2px 2px $shadow-color;
+  top: 430px;
   left: calc((100% - 900px) / 2);
   padding: 30px;
   flex-direction: column;
-
-  @include open-info(0);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .aboutMe__additional-info_type_skills {
-  line-height: 22px;
+  line-height: 23px;
   margin-bottom: 0;
 }
 
 .aboutMe__additional-info-about-me {
-  @include open-info(430px);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .aboutMe__additional-info-skills {
-  @include open-info(430px);
-}
-
-.aboutMe__additional-info-contacts {
-  @include open-info(430px);
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .aboutMe__additional-info_type_skills-link-github {
@@ -39,9 +39,8 @@
   color: rgb(10, 84, 142);
 }
 
-.aboutMe__additional-info_type_skills-list-works {
-  margin-top: 0;
-  margin-bottom: 30px;
+.aboutMe__additional-info_type_list {
+  margin: 0;
 }
 
 .aboutMe__main-info {

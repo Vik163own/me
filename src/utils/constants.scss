@@ -15,6 +15,7 @@ $text-color: black;
   max-width: $smw;
   width: $sw;
   box-shadow: $shadow-block;
+  transition: 0.2s;
 }
 
 @mixin flex-center() {
@@ -41,9 +42,4 @@ $text-color: black;
 @mixin indent-null {
   padding: 0;
   margin: 0;
-}
-
-@mixin open-info($hg) {
-  transform: translateY($hg);
-  transition: 0.5s;
 }
