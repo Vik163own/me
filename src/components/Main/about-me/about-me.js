@@ -8,6 +8,7 @@ import { Navigation } from '../navigation/navigation';
 
 import foto from '../../../images/me.jpg';
 import downloadIcon from '../../../images/download_icon.svg';
+import resume from '../../../images/Пузиков резюме.pdf';
 import vkIcon from '../../../images/vk_icon.svg';
 import gitIcon from '../../../images/github_icon.svg';
 import telegramIcon from '../../../images/telegram_icon.svg';
@@ -49,11 +50,11 @@ function AboutMe() {
     };
 
     document.addEventListener('keydown', closeByEscape);
-    document.querySelector('.main').addEventListener('click', closeByEscape);
+    document.querySelector('.page').addEventListener('click', closeByEscape);
     return () => {
       document.removeEventListener('keydown', closeByEscape);
       document
-        .querySelector('.main')
+        .querySelector('.page')
         .removeEventListener('click', closeByEscape);
     };
   }, [isAddInfoOpen]);
@@ -67,18 +68,14 @@ function AboutMe() {
       <div className='aboutMe__main-info'>
         <div className='aboutMe__image-container'>
           <img className='aboutMe__foto' src={foto} alt='фото' />
-          <button
-            className='aboutMe__download button-hover'
-            aria-label='download'
-            type='button'
-          >
+          <a className='aboutMe__download button-hover' href={resume} download>
             <img
               className='aboutMe__download-icon'
               src={downloadIcon}
               alt='download'
             />
             СКАЧАТЬ РЕЗЮМЕ
-          </button>
+          </a>
         </div>
         <div className='aboutMe__description-container'>
           <h2 className='aboutMe__title'>
@@ -86,11 +83,11 @@ function AboutMe() {
           </h2>
           <p className='aboutMe__subtitle'>веб-разработчик</p>
           <p className='aboutMe__description'>
-            &nbsp;Разработка увлекла! Нашлось дело, которому я рад отдавать
-            всего себя! Нет чувства рутины, нет усталости. Есть желание
-            развиваться! Создавать продукты, которыми будут пользоваться люди!
-            Творить! Созидать! Я, человек открытый к новым знаниям и не боюсь
-            перемен! Уверен, что смогу стать частью команды и приносить пользу!
+            &nbsp;Разработка увлекла! Нашлось любимое дело!
+            <br /> Нет чувства рутины, нет усталости. Есть желание развиваться!
+            Создавать продукты, которыми будут пользоваться люди! Творить!
+            Созидать! Я, человек открытый к новым знаниям и не боюсь перемен!
+            Уверен, что смогу стать частью команды и приносить пользу!
           </p>
           <ul className='aboutMe__contacts'>
             <li className='aboutMe__contact'>
@@ -134,7 +131,7 @@ function AboutMe() {
               <li className='aboutMe__navbar-link button-hover'>
                 <a
                   className='aboutMe__link'
-                  href='https://github.com/'
+                  href='https://t.me/Vik163nk'
                   target='_blank'
                   rel='noreferrer'
                 >

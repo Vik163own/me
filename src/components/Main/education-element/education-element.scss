@@ -14,18 +14,18 @@
 
 .education__specialization {
   font-style: italic;
-  font-size: 16px;
+  font-size: 17px;
   margin: 10px 0 15px;
 }
 
 .education__dates {
   font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 0;
 }
 
 .education__button {
-  @include text(14px, 16px, 400);
+  @include text(16px, 16px, 400);
   display: flex;
   align-items: center;
   margin: 0 0 15px 0;
@@ -49,12 +49,12 @@
 }
 
 .education__icon {
-  margin-right: 5px;
+  margin-right: 10px;
   width: 15px;
 }
 
 .education__info {
-  @include text(14px, 16px, 400);
+  @include text(16px, 18px, 400);
   display: flex;
   align-items: center;
   margin: 0 0 10px 0;
@@ -70,7 +70,7 @@
 }
 
 .education__description {
-  @include text(13px, 20px, 500);
+  @include text(15px, 20px, 500);
   margin-top: 20px;
   margin-top: 5px;
 }

@@ -3,7 +3,7 @@
 .education {
   @include flex-center();
   flex-direction: column;
-  width: 89%;
+  width: 100%;
 
   .education__title {
     @include text(32px, 32px, 500);
@@ -16,7 +16,7 @@
     @include indent-null();
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(2, 425px);
+    grid-template-columns: repeat(2, 450px);
     grid-template-rows: fit-content(361px);
     gap: 25px 50px;
   }

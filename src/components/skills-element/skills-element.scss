@@ -5,8 +5,8 @@
 }
 
 .skills__special {
-  @include text(14px, 20px, 500);
-  width: 250px;
+  @include text(15px, 23px, 500);
+  width: 270px;
   position: relative;
   display: inline-block;
   border: 1px solid rgb(77, 174, 212);
@@ -15,7 +15,7 @@
   text-decoration: none;
   margin: 0 0 10px 0;
   border-radius: 4px;
-  height: 20px;
+  height: 23px;
   text-align: center;
   box-shadow: 1px 1px 1px 0 $shadow-color;
   cursor: default;

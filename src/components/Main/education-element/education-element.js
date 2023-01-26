@@ -29,11 +29,11 @@ export function EducationElement({ card }) {
     };
 
     document.addEventListener('keydown', closeByEscape);
-    document.querySelector('.main').addEventListener('click', closeByEscape);
+    document.querySelector('.page').addEventListener('click', closeByEscape);
     return () => {
       document.removeEventListener('keydown', closeByEscape);
       document
-        .querySelector('.main')
+        .querySelector('.page')
         .removeEventListener('click', closeByEscape);
     };
   }, [isOpen]);
