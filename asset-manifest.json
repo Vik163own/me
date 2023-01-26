@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.15f79357.css",
-    "main.js": "/me/static/js/main.77e3b783.js",
+    "main.css": "/me/static/css/main.65af882d.css",
+    "main.js": "/me/static/js/main.00a60b46.js",
     "static/js/787.ee95881d.chunk.js": "/me/static/js/787.ee95881d.chunk.js",
+    "static/media/Пузиков резюме.pdf": "/me/static/media/Пузиков резюме.415bd8e15092c37890b7.pdf",
     "static/media/sgtu.pdf": "/me/static/media/sgtu.bb533686335dfa9d62b1.pdf",
     "static/media/Inter-Medium.ttf": "/me/static/media/Inter-Medium.9cbff87dc577185b8630.ttf",
     "static/media/Inter-Regular.ttf": "/me/static/media/Inter-Regular.96ce55e3ba0d6a209090.ttf",
@@ -23,12 +24,12 @@
     "index.html": "/me/index.html",
     "static/media/vk_icon.svg": "/me/static/media/vk_icon.d22b8b1a38d09bc3a0c219306462c2c4.svg",
     "static/media/closeIcon.svg": "/me/static/media/closeIcon.eae5a1aaa0cc399fb610446fb1fe0054.svg",
-    "main.15f79357.css.map": "/me/static/css/main.15f79357.css.map",
-    "main.77e3b783.js.map": "/me/static/js/main.77e3b783.js.map",
+    "main.65af882d.css.map": "/me/static/css/main.65af882d.css.map",
+    "main.00a60b46.js.map": "/me/static/js/main.00a60b46.js.map",
     "787.ee95881d.chunk.js.map": "/me/static/js/787.ee95881d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15f79357.css",
-    "static/js/main.77e3b783.js"
+    "static/css/main.65af882d.css",
+    "static/js/main.00a60b46.js"
   ]
 }
