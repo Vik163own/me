@@ -1,17 +1,17 @@
 import { useState } from 'react';
 
-import './about-me.scss';
+import './about-me-additional.scss';
 import gitIcon from '../../../images/github_icon_blue.svg';
 
 export function AboutMeAdditional(props) {
   const { classAddInfo, isNameAddInfo } = props;
 
   return (
-    <div className={`aboutMe__additional-info ${classAddInfo}`}>
+    <div className={`about-me__additional-info ${classAddInfo}`}>
       {isNameAddInfo === 'about-me' && (
         <>
-          <h2>О себе</h2>
-          <p className='aboutMe__additional-info_type_skills'>
+          <h2 className='about-me__title'>О себе</h2>
+          <p className='additional-info__text'>
             - Кто я? Тот, кто хочет изменить свою жизнь к лучшему. Найти
             интересную работу. <br />
             - Что у меня есть? Это моя семья, двое детей и обязанность сделать
@@ -25,15 +25,15 @@ export function AboutMeAdditional(props) {
             <br />- Что я хочу? Найти интересную, перспективную и
             высокооплачиваемую работу веб-разработчика.
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             Много лет я был предпринимателем, связанным с работой в области
             фотографии и дизайна.
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             Свой фотосалон, работа за компьютером и постоянное общение с людьми
             развили во мне такие качества, как:
           </p>
-          <ul className='aboutMe__additional-info_type_list'>
+          <ul className='additional-info__list'>
             <li>инициативность,</li>
             <li>умение находить общий язык с людьми,</li>
             <li>стрессоустойчивасть,</li>
@@ -42,20 +42,20 @@ export function AboutMeAdditional(props) {
             <li>усидчивость,</li>
             <li>выполнение поставленных задач</li>
           </ul>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             Основным инструментом являлся Adobe Photoshop. Дополнительно
             занимался рекламой - это дизайн логотипов, баннеров, визиток. Здесь
             применял Adobe Illustrator, иногда Corel. Ещё в багаж знаний можно
             добавить работу с Windows - установка и настройка самой ОС, а также
             программ и утилит на ее основе.
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             Но это не стало делом жизни. Хотелось чего-то другого. Ковидные
             ограничения стали стимулом к изменениям. Оставив фотографию в
             надежных руках, сам решил учиться программированию. Математический
             склад ума тянул к нему, но заняться этим не хватало времени.
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             На время обучения устроился на работу электриком, где пока и
             работаю. <br />
             Первое время пытался учиться сам, но из этого мало, что получилось.
@@ -69,29 +69,29 @@ export function AboutMeAdditional(props) {
             понравился! Закончил и его. Теперь настало время саморазвития и
             поиска работы.
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             Верю, что не потратил время впустую и найду работу разработчика.
           </p>
         </>
       )}
       {isNameAddInfo === 'skills' && (
         <>
-          <h2>Опыт</h2>
-          <p className='aboutMe__additional-info_type_skills'>
+          <h2 className='about-me__title'>Опыт</h2>
+          <p className='additional-info__text'>
             Об опыте разработки рассказать могу немного.
             <br /> Весь он связан с учебными проектами и дипломом.
             <br />
             <a
-              className='aboutMe__additional-info_type_skills-link-github'
+              className='additional-info__link'
               href='https://github.com//Vik163'
               target='_blank'
               rel='noreferrer'
             >
               Посмотреть можно здесь &#8594; &nbsp;
-              <img className='aboutMe__link-icon' src={gitIcon} alt='Гитхаб' />
+              <img className='about-me__link-icon' src={gitIcon} alt='Гитхаб' />
             </a>
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
+          <p className='additional-info__text'>
             Все работы выполнял используя полученные знания.
             <br /> Самостоятельно изучал необходимые материалы, а когда
             оказывался в тупике помогали студенты курса или наставники.
@@ -99,10 +99,8 @@ export function AboutMeAdditional(props) {
             ошибки, недочеты и несовершенство кода. И только после устранения
             всех недостатков принимались.{' '}
           </p>
-          <p className='aboutMe__additional-info_type_skills'>
-            Таких этапов было:
-          </p>
-          <ul className='aboutMe__additional-info_type_list'>
+          <p className='additional-info__text'>Таких этапов было:</p>
+          <ul className='additional-info__list'>
             <li>
               за время обучения на веб-разработке - пятнадцать и дипломная
               работа

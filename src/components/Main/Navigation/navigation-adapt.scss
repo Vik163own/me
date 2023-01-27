@@ -1,0 +1,31 @@
+@import '../../../utils/constants.scss';
+
+@media screen and (max-width: 1100px) {
+  .about-me__navbar {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-me__navbar-link {
+    margin-right: 20px;
+    @include links(20px, 20px);
+  }
+
+  .about-me__link-icon {
+    width: 13px;
+  }
+
+  .navigation__buttons-item {
+    margin-right: 25px;
+    height: 20px;
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+
+  .navigation__button {
+    @include flex-center();
+    @include text(12px, 14px, 400);
+  }
+}

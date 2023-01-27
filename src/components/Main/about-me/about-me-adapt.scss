@@ -1,0 +1,176 @@
+@import '../../../utils/constants.scss';
+
+@media (max-width: 1100px) {
+  .about-me {
+    max-width: 800px;
+  }
+
+  .about-me__main-info {
+    max-width: 800px;
+    height: auto;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 226px 72px 25px;
+    gap: 0 30px;
+  }
+
+  .about-me__image-container {
+    height: 323px;
+    justify-content: space-between;
+  }
+
+  .about-me__foto {
+    max-height: 270px;
+    max-width: 200px;
+  }
+
+  .about-me__download {
+    @include links(200px, 40px);
+  }
+
+  .about-me__title {
+    @include text(30px, 30px, 500);
+    letter-spacing: -2px;
+    margin: 0 0 10px;
+  }
+
+  .about-me__description {
+    @include text(16px, 22px, 400);
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .about-me__contact {
+    @include text(13px, 22px, 400);
+    height: 22px;
+  }
+
+  .about-me__contacts-data {
+    left: 29%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-me {
+    max-width: 650px;
+  }
+
+  .about-me__main-info {
+    max-width: 650px;
+    height: auto;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 185px 60px 25px;
+    gap: 0 30px;
+  }
+
+  .about-me__image-container {
+    width: 150px;
+    height: 264px;
+    justify-content: space-between;
+  }
+
+  .about-me__foto {
+    max-height: 215px;
+    max-width: 150px;
+  }
+
+  .about-me__download {
+    @include links(150px, 20px);
+    @include text(12px, 13px, 500);
+  }
+
+  .about-me__download-icon {
+    width: 16px;
+    margin-right: 2px;
+  }
+
+  .about-me__title {
+    @include text(22px, 22px, 500);
+    margin: 0 0 8px;
+  }
+
+  .about-me__subtitle {
+    @include text(18px, 20px, 500);
+  }
+
+  .about-me__description {
+    @include text(14px, 18px, 400);
+    max-width: 420px;
+    margin: 13px 0 6px 0;
+  }
+
+  .about-me__contact {
+    @include text(11px, 16px, 400);
+    height: 16px;
+  }
+
+  .about-me__contacts-data {
+    left: 29%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-me {
+    max-width: 400px;
+  }
+
+  .about-me__main-info {
+    max-width: 400px;
+    height: 220px;
+  }
+
+  .about-me__image-container {
+    padding: 20px 0 0;
+    justify-content: start;
+    height: 186px;
+  }
+
+  .about-me__foto {
+    max-height: 150px;
+    max-width: 100px;
+  }
+
+  .about-me__download {
+    margin-top: 10px;
+    @include links(100px, 20px);
+    @include text(8px, 14px, 500);
+  }
+
+  .about-me__download-icon {
+    width: 12px;
+    margin-right: 2px;
+  }
+
+  .about-me__description-container {
+    margin: 15px 15px 15px 0;
+  }
+
+  .about-me__title {
+    @include text(18px, 20px, 500);
+    margin: 0 0 4px;
+  }
+
+  .about-me__subtitle {
+    @include text(14px, 16px, 500);
+  }
+
+  .about-me__description {
+    @include text(12px, 16px, 400);
+    max-width: 420px;
+    margin: 13px 0 6px 0;
+  }
+
+  .about-me__contacts {
+    position: absolute;
+  }
+
+  .about-me__contact {
+    @include text(11px, 20px, 400);
+  }
+
+  .about-me__contacts-data {
+    left: 29%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}

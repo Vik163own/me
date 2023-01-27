@@ -1,47 +1,91 @@
 @import '../../../utils/constants.scss';
 
+.about-me__navbar {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px 0 0;
+}
+
+.about-me__navbar-links {
+  display: flex;
+  list-style: none;
+  @include indent-null();
+}
+
+.about-me__navbar-link {
+  margin-right: 20px;
+  @include links(25px, 25px);
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.about-me__link {
+  @include flex-center();
+  color: $text-color;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+
+  &:active {
+    box-shadow: $inner-shadow;
+  }
+
+  &:hover .about-me__link-icon {
+    opacity: 0.8;
+  }
+}
+
+.about-me__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+}
+
 .navigation {
   position: relative;
   display: flex;
   justify-content: center;
   width: 60%;
   z-index: 2;
+}
 
-  .navigation__buttons {
-    @include indent-null();
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+.navigation__buttons {
+  @include indent-null();
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation__buttons-item {
+  width: 33%;
+  margin-right: 25px;
+  box-shadow: $shadow-border;
+  &:last-child {
+    margin-right: 10px;
   }
+}
 
-  .navigation__buttons-item {
-    width: 33%;
-    margin-right: 25px;
-    box-shadow: $shadow-border;
-    &:last-child {
-      margin-right: 10px;
-    }
+.navigation__button {
+  @include flex-center();
+  @include text(15px, 16px, 400);
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  color: $text-color;
+  &:focus {
+    font-weight: 500;
+    opacity: 1;
   }
+}
 
-  .navigation__button {
-    @include flex-center();
-    @include text(15px, 16px, 400);
-    border: none;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-
-    color: $text-color;
-    &:focus {
-      font-weight: 500;
-      opacity: 1;
-    }
-  }
-
-  .navigation__button_active {
-    background-color: rgb(247, 247, 247);
-    box-shadow: $inner-shadow;
-  }
+.navigation__button_active {
+  background-color: rgb(247, 247, 247);
+  box-shadow: $inner-shadow;
 }

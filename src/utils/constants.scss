@@ -24,9 +24,8 @@ $text-color: black;
   justify-content: center;
 }
 
-@mixin links($sw, $smw, $sh) {
+@mixin links($sw, $sh) {
   height: $sh;
-  max-width: $smw;
   width: $sw;
   background-color: $bkg-color;
   box-shadow: $shadow-border;

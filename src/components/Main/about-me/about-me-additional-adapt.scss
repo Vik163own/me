@@ -1,0 +1,40 @@
+@import '../../../utils/constants.scss';
+
+@media (max-width: 1100px) {
+  .about-me__additional-info {
+    @include block(100%, 800px, auto, 2);
+    top: 400px;
+    left: calc((100% - 800px) / 2);
+  }
+
+  .additional-info__text {
+    line-height: 22px;
+    font-size: 17px;
+  }
+
+  .additional-info__list {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-me__additional-info {
+    @include block(100%, 650px, auto, 2);
+    top: 345px;
+    left: calc((100% - 650px) / 2);
+    padding: 25px;
+
+    &_type_list {
+      font-size: 17px;
+    }
+  }
+
+  .additional-info__text {
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .additional-info__list {
+    font-size: 16px;
+  }
+}

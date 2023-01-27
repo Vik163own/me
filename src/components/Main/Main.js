@@ -10,8 +10,8 @@ function Main() {
   return (
     <main className='main'>
       <AboutMe />
-      <Skills />
-      <Education />
+      {/* <Skills />
+      <Education /> */}
     </main>
   );
 }

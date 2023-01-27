@@ -1,0 +1,36 @@
+@import '../../../utils/constants.scss';
+
+.about-me__additional-info {
+  box-sizing: border-box;
+  @include block(100%, 950px, auto, 2);
+  top: 430px;
+  left: calc((100% - 950px) / 2);
+  padding: 30px;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+
+  &_active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s;
+  }
+}
+
+.additional-info__link {
+  display: flex;
+  text-decoration: none;
+  color: rgb(10, 84, 142);
+}
+
+.additional-info__text {
+  line-height: 23px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.additional-info__list {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+}

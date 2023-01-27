@@ -1,185 +1,106 @@
 @import '../../../utils/constants.scss';
 
-.aboutMe {
+.about-me {
   position: relative;
   width: 950px;
 }
 
-.aboutMe__additional-info {
-  box-sizing: border-box;
-  @include block(100%, 950px, auto, 2);
-  top: 430px;
-  left: calc((100% - 950px) / 2);
-  padding: 30px;
-  flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.aboutMe__additional-info_type_skills {
-  line-height: 23px;
-  font-size: 18px;
-  margin-bottom: 0;
-}
-
-.aboutMe__additional-info-about-me {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.2s;
-}
-
-.aboutMe__additional-info-skills {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.2s;
-}
-
-.aboutMe__additional-info_type_skills-link-github {
-  display: flex;
-  text-decoration: none;
-  color: rgb(10, 84, 142);
-}
-
-.aboutMe__additional-info_type_list {
-  font-size: 18px;
-  font-style: italic;
-  margin: 0;
-}
-
-.aboutMe__main-info {
+.about-me__main-info {
   @include block(100%, 950px, 419px, 3);
+  padding: 29px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 240px 90px 25px;
+  gap: 0 40px;
+}
 
-  .aboutMe__image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% / 3);
-    margin: 25px 0;
+.about-me__image-container {
+  display: flex;
+  flex-direction: column;
+  height: 358px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  grid-row: span 3;
+  justify-self: center;
+}
+.about-me__foto {
+  max-height: 300px;
+  height: 100%;
+  width: 240px;
+  object-fit: cover;
+  box-shadow: $shadow-block;
+}
 
-    .aboutMe__foto {
-      max-height: 300px;
-      height: 100%;
-      max-width: 240px;
-      width: 100%;
-      object-fit: cover;
-      box-shadow: $shadow-block;
-    }
+.about-me__download {
+  text-decoration: none;
+  color: $text-color;
+  border-style: none;
+  @include text(14px, 15px, 500);
+  @include indent-null();
+  @include flex-center();
+  @include links(240px, 40px);
 
-    .aboutMe__download {
-      text-decoration: none;
-      color: $text-color;
-      $text: 14px;
-      font-size: $text;
-      font-weight: 500;
-      border-style: none;
-      @include indent-null();
-      @include flex-center();
-      @include links(100%, 240px, 40px);
-
-      &:active {
-        font-size: $text - 0.5px;
-        border: 1px solid $shadow-color;
-        box-shadow: $inner-shadow;
-      }
-    }
-    .aboutMe__download-icon {
-      width: 20px;
-      margin-right: 10px;
-    }
-  }
-
-  .aboutMe__description-container {
-    width: 69%;
-    position: relative;
-    margin: 25px 0;
-
-    .aboutMe__title {
-      @include text(32px, 32px, 500);
-      letter-spacing: -2px;
-      margin: 0 0 10px;
-    }
-
-    .aboutMe__title-name {
-      color: rgb(77, 174, 212);
-    }
-
-    .aboutMe__subtitle {
-      @include text(20px, 22px, 500);
-      @include indent-null();
-    }
-
-    .aboutMe__description {
-      @include text(17px, 25px, 400);
-      max-width: 600px;
-      width: 100%;
-      margin: 26px 0;
-    }
-
-    .aboutMe__contacts {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      width: 96%;
-      @include indent-null();
-    }
-
-    .aboutMe__contact {
-      color: rgb(107, 107, 107);
-      position: relative;
-      width: 50%;
-      @include text(14px, 30px, 400);
-      @include indent-null();
-    }
-
-    .aboutMe__contacts-data {
-      color: $text-color;
-      font-weight: 500;
-      position: absolute;
-      left: 35%;
-    }
-
-    .aboutMe__navbar {
-      display: flex;
-      justify-content: space-around;
-      margin: 13px 20px 0 0;
-    }
-
-    .aboutMe__navbar-links {
-      display: flex;
-      list-style: none;
-      @include indent-null();
-    }
-
-    .aboutMe__navbar-link {
-      margin-right: 20px;
-      @include links(25px, 25px, 25px);
-
-      &:last-child {
-        margin: 0;
-      }
-    }
-
-    .aboutMe__link {
-      @include flex-center();
-      color: $text-color;
-      text-decoration: none;
-      width: 100%;
-      height: 100%;
-
-      &:active {
-        box-shadow: $inner-shadow;
-      }
-
-      &:hover .aboutMe__link-icon {
-        opacity: 0.8;
-      }
-    }
+  &:active {
+    border: 1px solid $shadow-color;
+    box-shadow: $inner-shadow;
   }
 }
-.aboutMe__link-icon {
+.about-me__download-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.about-me__description-container {
+  width: 100%;
+  position: relative;
+}
+
+.about-me__title {
+  @include text(32px, 32px, 500);
+  letter-spacing: -2px;
+  margin: 0 0 10px;
+}
+
+.about-me__title-name {
+  color: rgb(77, 174, 212);
+}
+
+.about-me__subtitle {
+  @include text(20px, 22px, 500);
+  font-style: italic;
+  @include indent-null();
+}
+
+.about-me__description {
+  @include text(17px, 25px, 400);
+  max-width: 600px;
+  width: 100%;
+  margin: 26px 0;
+}
+
+.about-me__contacts {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15px;
+  flex-wrap: wrap;
+  width: 98%;
+  @include indent-null();
+}
+
+.about-me__contact {
+  color: rgb(107, 107, 107);
+  position: relative;
+  width: 50%;
+  height: 30px;
+  @include text(14px, 30px, 400);
+  @include indent-null();
+}
+
+.about-me__contacts-data {
+  color: $text-color;
+  font-weight: 500;
+  position: absolute;
+  left: 35%;
 }
