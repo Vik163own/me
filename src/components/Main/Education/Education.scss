@@ -16,8 +16,7 @@
 .education__container {
   @include indent-null();
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 450px);
-  grid-template-rows: fit-content(361px);
-  gap: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

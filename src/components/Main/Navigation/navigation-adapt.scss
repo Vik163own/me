@@ -52,13 +52,13 @@
 
 @media screen and (max-width: 410px) {
   .about-me__navbar {
-    margin-top: 7px;
-    width: 95%;
+    margin-top: 0;
+    width: 100%;
     justify-self: center;
   }
 
   .about-me__navbar-link {
-    margin-right: 20px;
+    margin-right: 16px;
     @include links(16px, 16px);
   }
 
@@ -67,16 +67,17 @@
   }
 
   .navigation__buttons-item {
-    margin-right: 25px;
-    height: 16px;
-    width: 38%;
     margin-right: 20px;
+    height: 16px;
+    width: 48%;
+    margin-right: 16px;
     &:last-child {
       margin-right: 0;
     }
   }
 
   .navigation__button {
+    width: 56px;
     @include flex-center();
     @include text(12px, 14px, 400);
   }

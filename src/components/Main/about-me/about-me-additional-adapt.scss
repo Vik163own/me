@@ -42,9 +42,9 @@
 
 @media (max-width: 410px) {
   .about-me__additional-info {
-    @include block(100%, 284px, auto, 2);
-    top: 310px;
-    left: calc((100% - 284px) / 2);
+    width: 280px;
+    top: 410px;
+    left: calc((100% - 280px) / 2);
     padding: 8px;
   }
 

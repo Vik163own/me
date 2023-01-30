@@ -17,9 +17,11 @@ export function Diplomas({ isOpen, name, closePopup }) {
             onClick={closePopup}
             alt='Закрыть'
           />
-          {name === 'web' && <img src={web} className='diplomas-item' />}
-          {name === 'sgtu' && <img src={sgtu} className='diplomas-item' />}
-          {name === 'nht' && <img src={nht} className='diplomas-item' />}
+          <div className='diplomas__container-image'>
+            {name === 'web' && <img src={web} className='diplomas-item' />}
+            {name === 'sgtu' && <img src={sgtu} className='diplomas-item' />}
+            {name === 'nht' && <img src={nht} className='diplomas-item' />}
+          </div>
         </section>
       )}
     </>
