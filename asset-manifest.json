@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/me/static/css/main.e39c1d13.css",
-    "main.js": "/me/static/js/main.e2c1de46.js",
+    "main.js": "/me/static/js/main.d967f03c.js",
     "static/js/787.ee95881d.chunk.js": "/me/static/js/787.ee95881d.chunk.js",
     "static/media/Пузиков резюме.pdf": "/me/static/media/Пузиков резюме.415bd8e15092c37890b7.pdf",
     "static/media/sgtu.pdf": "/me/static/media/sgtu.bb533686335dfa9d62b1.pdf",
@@ -25,11 +25,11 @@
     "static/media/vk_icon.svg": "/me/static/media/vk_icon.d22b8b1a38d09bc3a0c219306462c2c4.svg",
     "static/media/closeIcon.svg": "/me/static/media/closeIcon.eae5a1aaa0cc399fb610446fb1fe0054.svg",
     "main.e39c1d13.css.map": "/me/static/css/main.e39c1d13.css.map",
-    "main.e2c1de46.js.map": "/me/static/js/main.e2c1de46.js.map",
+    "main.d967f03c.js.map": "/me/static/js/main.d967f03c.js.map",
     "787.ee95881d.chunk.js.map": "/me/static/js/787.ee95881d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e39c1d13.css",
-    "static/js/main.e2c1de46.js"
+    "static/js/main.d967f03c.js"
   ]
 }
