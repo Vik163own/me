@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './header.css';
+import './header.scss';
 
 function Header() {
   return <header className='header page__header' />;

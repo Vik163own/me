@@ -1,5 +1,6 @@
 import React from 'react';
-import './special-skills.scss';
+import './skills.scss';
+import './skills-adapt.scss';
 
 import { SkillsElement } from '../../skills-element/skills-element';
 import {

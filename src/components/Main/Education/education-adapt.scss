@@ -1,0 +1,36 @@
+@import '../../../utils/constants.scss';
+
+@media (max-width: 1000px) {
+  .education__title {
+    @include text(30px, 30px, 500);
+    margin: 50px 0;
+  }
+
+  .education__container {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: fit-content(361px);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .education__title {
+    @include text(26px, 28px, 500);
+    margin: 40px 0;
+  }
+
+  .education__container {
+    grid-template-columns: 380px;
+  }
+}
+
+@media (max-width: 410px) {
+  .education__title {
+    @include text(20px, 28px, 500);
+    margin: 20px 0;
+  }
+
+  .education__container {
+    grid-template-columns: 280px;
+  }
+}

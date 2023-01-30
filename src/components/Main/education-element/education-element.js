@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './education-element.scss';
+import './education-element-adapt.scss';
 
 import sheet from '../../../images/диплом.png';
 import university from '../../../images/sheet_pen.svg';

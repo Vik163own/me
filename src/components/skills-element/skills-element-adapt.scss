@@ -1,0 +1,12 @@
+@import '../../utils/constants.scss';
+
+@media (max-width: 1000px) {
+  .skills__special {
+    @include text(13px, 22px, 500);
+    width: 190px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}

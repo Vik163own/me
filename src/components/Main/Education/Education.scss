@@ -4,20 +4,20 @@
   @include flex-center();
   flex-direction: column;
   width: 100%;
+}
 
-  .education__title {
-    @include text(32px, 32px, 500);
-    color: rgb(77, 174, 212);
-    letter-spacing: -2px;
-    margin: 70px 0 60px;
-  }
+.education__title {
+  @include text(32px, 32px, 500);
+  color: rgb(77, 174, 212);
+  letter-spacing: -1px;
+  margin: 70px 0 60px;
+}
 
-  .education__container {
-    @include indent-null();
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 450px);
-    grid-template-rows: fit-content(361px);
-    gap: 25px 50px;
-  }
+.education__container {
+  @include indent-null();
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  grid-template-rows: fit-content(361px);
+  gap: 25px 50px;
 }

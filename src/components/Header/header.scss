@@ -6,3 +6,9 @@
   height: 74px;
   z-index: 1;
 }
+
+@media (max-width: 700px) {
+  .header {
+    height: 34px;
+  }
+}

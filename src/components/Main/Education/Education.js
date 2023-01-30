@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './education.scss';
+import './education-adapt.scss';
 
 import { courses, education } from '../../../utils/constants';
 

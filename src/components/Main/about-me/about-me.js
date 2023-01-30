@@ -84,9 +84,9 @@ function AboutMe() {
           <p className='about-me__description'>
             &nbsp;Разработка увлекла! Нашлось любимое дело!
             <br /> Нет чувства рутины, нет усталости. Есть желание развиваться!
-            Создавать продукты, которыми будут пользоваться люди! Творить!
-            Созидать! Я, человек открытый к новым знаниям и не боюсь перемен!
-            Уверен, что смогу стать частью команды и приносить пользу!
+            Создавать продукты, которыми будут пользоваться люди! Я, человек
+            открытый к новым знаниям и не боюсь перемен! Уверен, что смогу стать
+            частью команды и приносить пользу!
           </p>
         </div>
         <ul className='about-me__contacts'>
@@ -100,13 +100,14 @@ function AboutMe() {
             </span>
           </li>
           <li className='about-me__contact'>
-            Email
-            <span className='about-me__contacts-data'>sfoto116@yandex.ru</span>
-          </li>
-          <li className='about-me__contact'>
             Телефон
             <span className='about-me__contacts-data'>+7 927 267 90 44</span>
           </li>
+          <li className='about-me__contact'>
+            Email
+            <span className='about-me__contacts-data'>sfoto116@yandex.ru</span>
+          </li>
+
           <li className='aabout-me__contact'>
             &nbsp;
             <span className='about-me__contacts-data'></span>

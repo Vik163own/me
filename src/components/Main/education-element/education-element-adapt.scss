@@ -1,0 +1,95 @@
+@import '../../../utils/constants.scss';
+
+@media (max-width: 1000px) {
+  .education__element {
+    padding: 15px;
+  }
+
+  .education__specialization {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .education__dates {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .education__button {
+    @include text(13px, 16px, 400);
+    margin: 0 0 12px 0;
+  }
+
+  .education__icon {
+    margin-right: 8px;
+    width: 12px;
+  }
+
+  .education__info {
+    @include text(13px, 15px, 400);
+  }
+
+  .education__description {
+    @include text(14px, 20px, 500);
+  }
+}
+
+@media (max-width: 700px) {
+  .education__element {
+    padding: 15px;
+  }
+
+  .education__specialization {
+    margin: 7px 0;
+  }
+
+  .education__dates {
+    margin-bottom: 10px;
+  }
+
+  .education__button {
+    margin: 0 0 10px 0;
+  }
+
+  .education__description {
+    @include text(13px, 18px, 500);
+  }
+}
+
+@media (max-width: 410px) {
+  .education__element {
+    padding: 10px;
+  }
+
+  .education__title-item {
+    font-size: 17px;
+  }
+
+  .education__specialization {
+    margin: 6px 0;
+  }
+
+  .education__dates {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .education__button {
+    @include text(12px, 16px, 400);
+    margin: 0 0 8px 0;
+  }
+
+  .education__icon {
+    margin-right: 8px;
+    width: 12px;
+  }
+
+  .education__info {
+    @include text(12px, 15px, 400);
+    margin-bottom: 8px;
+  }
+
+  .education__description {
+    @include text(12px, 18px, 500);
+  }
+}

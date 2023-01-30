@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import './skills-element.scss';
+import './skills-element-adapt.scss';
 
 export const SkillsElement = ({ name, procents, caption }) => {
   const [isHover, setIsHover] = useState(false);

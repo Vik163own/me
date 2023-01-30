@@ -1,55 +1,6 @@
 @import '../../../utils/constants.scss';
 
-@media (max-width: 1100px) {
-  .about-me {
-    max-width: 800px;
-  }
-
-  .about-me__main-info {
-    max-width: 800px;
-    height: auto;
-    grid-template-columns: 200px auto;
-    grid-template-rows: 226px 72px 25px;
-    gap: 0 30px;
-  }
-
-  .about-me__image-container {
-    height: 323px;
-    justify-content: space-between;
-  }
-
-  .about-me__foto {
-    max-height: 270px;
-    max-width: 200px;
-  }
-
-  .about-me__download {
-    @include links(200px, 40px);
-  }
-
-  .about-me__title {
-    @include text(30px, 30px, 500);
-    letter-spacing: -2px;
-    margin: 0 0 10px;
-  }
-
-  .about-me__description {
-    @include text(16px, 22px, 400);
-    width: 100%;
-    margin: 16px 0;
-  }
-
-  .about-me__contact {
-    @include text(13px, 22px, 400);
-    height: 22px;
-  }
-
-  .about-me__contacts-data {
-    left: 29%;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media (max-width: 1000px) {
   .about-me {
     max-width: 650px;
   }
@@ -85,6 +36,7 @@
 
   .about-me__title {
     @include text(22px, 22px, 500);
+    letter-spacing: -1px;
     margin: 0 0 8px;
   }
 
@@ -108,45 +60,45 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .about-me {
-    max-width: 400px;
+    max-width: 410px;
   }
 
   .about-me__main-info {
-    max-width: 400px;
-    height: 220px;
+    max-width: 410px;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 165px 50px 16px;
+    gap: 0 15px;
+    padding: 14px;
   }
 
   .about-me__image-container {
-    padding: 20px 0 0;
-    justify-content: start;
-    height: 186px;
+    width: 90px;
+    height: 150px;
+    grid-row: span 1;
+    margin-top: 4px;
   }
 
   .about-me__foto {
-    max-height: 150px;
-    max-width: 100px;
+    max-height: 120px;
+    max-width: 90px;
   }
 
   .about-me__download {
-    margin-top: 10px;
-    @include links(100px, 20px);
-    @include text(8px, 14px, 500);
+    margin-top: 13px;
+    @include links(90px, 20px);
+    @include text(7.5px, 10px, 500);
   }
 
   .about-me__download-icon {
-    width: 12px;
+    width: 11px;
     margin-right: 2px;
   }
 
-  .about-me__description-container {
-    margin: 15px 15px 15px 0;
-  }
-
   .about-me__title {
-    @include text(18px, 20px, 500);
-    margin: 0 0 4px;
+    @include text(18px, 17px, 500);
+    margin: 0 0 4px 0;
   }
 
   .about-me__subtitle {
@@ -155,22 +107,102 @@
 
   .about-me__description {
     @include text(12px, 16px, 400);
-    max-width: 420px;
-    margin: 13px 0 6px 0;
+    margin: 8px 0 0 0;
   }
 
   .about-me__contacts {
-    position: absolute;
+    grid-column: span 2;
+    width: 100%;
   }
 
   .about-me__contact {
     @include text(11px, 20px, 400);
-  }
-
-  .about-me__contacts-data {
-    left: 29%;
+    &:nth-of-type(odd) {
+      width: 46%;
+    }
+    &:nth-of-type(even) {
+      width: 54%;
+    }
   }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 410px) {
+  .about-me {
+    max-width: 284px;
+  }
+
+  .about-me__main-info {
+    max-width: 284px;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 195px 70px 23px;
+    gap: 0 8px;
+    padding: 8px;
+  }
+
+  .about-me__image-container {
+    width: 80px;
+    height: 163px;
+    grid-row: span 1;
+    margin-top: 25px;
+  }
+
+  .about-me__foto {
+    max-height: 120px;
+    max-width: 80px;
+  }
+
+  .about-me__download {
+    @include links(80px, 30px);
+    @include text(9px, 10px, 500);
+  }
+
+  .about-me__download-icon {
+    width: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .about-me__title {
+    position: absolute;
+    left: -80px;
+    width: 250px;
+    text-align: center;
+    @include text(17px, 17px, 500);
+  }
+
+  .about-me__subtitle {
+    margin-top: 19px;
+    @include text(13px, 15px, 500);
+  }
+
+  .about-me__description {
+    @include text(11px, 14px, 400);
+    margin: 4px 0 0 0;
+  }
+
+  .about-me__contacts {
+    width: 85%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .about-me__contact {
+    @include text(10px, 20px, 400);
+    display: flex;
+    justify-content: space-between;
+    &:nth-of-type(odd) {
+      width: 95%;
+    }
+    &:nth-of-type(even) {
+      width: 95%;
+    }
+    text-align: center;
+  }
+
+  .about-me__contacts-data {
+    position: relative;
+    left: 0;
+  }
 }

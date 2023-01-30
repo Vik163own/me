@@ -1,0 +1,64 @@
+@import '../../../utils/constants.scss';
+
+@media (max-width: 1000px) {
+  .skills__title {
+    @include text(30px, 30px, 500);
+    margin: 400px 0 30px;
+  }
+
+  .skills__container {
+    width: 620px;
+  }
+
+  .skills__special-container {
+    width: 100%;
+  }
+
+  .skills__additional-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills__title {
+    @include text(26px, 28px, 500);
+    margin: 300px 0 30px;
+  }
+
+  .skills__container {
+    width: 410px;
+  }
+
+  .skills__subtitle {
+    @include text(18px, 20px, 500);
+    margin: 0;
+  }
+
+  .skills__additional-container {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .skills__title {
+    @include text(20px, 28px, 500);
+    margin: 320px 0 10px;
+  }
+
+  .skills__container {
+    width: 284px;
+  }
+
+  .skills__subtitle {
+    @include text(14px, 16px, 500);
+    margin: 0;
+  }
+
+  .skills__special-container {
+    justify-content: center;
+  }
+
+  .skills__additional-container {
+    justify-content: center;
+  }
+}

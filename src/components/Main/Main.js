@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './main.css';
+import './main.scss';
 
 import AboutMe from './about-me/about-me.js';
 import { Education } from './education/education.js';
@@ -10,8 +10,8 @@ function Main() {
   return (
     <main className='main'>
       <AboutMe />
-      {/* <Skills />
-      <Education /> */}
+      <Skills />
+      <Education />
     </main>
   );
 }
