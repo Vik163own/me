@@ -24,10 +24,6 @@
     background-color: rgb(245, 243, 241);
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &:hover .skills__special-shadow {
     width: var(--scale);
     transition: 0.5s;
