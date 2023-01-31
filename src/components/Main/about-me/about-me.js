@@ -7,7 +7,7 @@ import './about-me-additional-adapt.scss';
 
 import { Navigation } from '../navigation/navigation';
 
-import foto from '../../../images/me.jpg';
+import foto from '../../../images/me.png';
 import downloadIcon from '../../../images/download_icon.svg';
 import resume from '../../../images/Пузиков резюме.pdf';
 import { AboutMeAdditional } from './about-me-additional';
