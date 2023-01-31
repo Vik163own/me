@@ -2,10 +2,10 @@
 
 .diplomas__container-image {
   width: 950px;
-  max-height: 100vh;
+  max-height: calc(100vh - 20px);
   background-color: white;
   position: fixed;
-  top: 80px;
+  top: 10px;
   left: calc((100% - 950px) / 2);
   z-index: 10;
   box-shadow: $shadow-block;
@@ -18,7 +18,7 @@
 
 .diplomas__close {
   position: fixed;
-  top: 80px;
+  top: 30px;
   left: calc((100% / 2) + 500px);
   width: 20px;
   z-index: 12;
