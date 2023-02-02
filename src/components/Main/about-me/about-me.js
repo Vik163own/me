@@ -9,7 +9,7 @@ import { Navigation } from '../navigation/navigation';
 
 import foto from '../../../images/me.png';
 import downloadIcon from '../../../images/download_icon.svg';
-import resume from '../../../images/Пузиков резюме.pdf';
+import resume from '../../../images/Puzikov_resume.pdf';
 import { AboutMeAdditional } from './about-me-additional';
 
 function AboutMe() {

@@ -48,7 +48,7 @@ export function EducationElement({ card }) {
           className='education__button'
           data-id={card.dataId}
           onClick={openPopup}
-          onBlur={null}
+          // onBlur={null}
           type='button'
         >
           <img className='education__icon' src={sheet} alt='sheet' />
