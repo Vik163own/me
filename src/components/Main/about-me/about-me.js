@@ -91,7 +91,7 @@ function AboutMe() {
         </div>
         <ul className='about-me__contacts'>
           <li className='about-me__contact'>
-            Возраст <span className='about-me__contacts-data'>47</span>
+            Возраст <span className='about-me__contacts-data'>48</span>
           </li>
           <li className='about-me__contact'>
             Адрес
