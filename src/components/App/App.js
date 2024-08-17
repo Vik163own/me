@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './app.scss';
+import "./app.scss";
 
-import Header from '../header/header.js';
-import { Footer } from '../footer/footer.js';
-import Main from '../main/main.js';
+import Header from "../Header/Header.js";
+import { Footer } from "../Footer/Footer.js";
+import Main from "../Main/Main.js";
 
 function App() {
   return (
-    <div className='page'>
+    <div className="page">
       <Header />
       <Main />
       <Footer />
