@@ -1,4 +1,4 @@
-@import '../../../utils/constants.scss';
+@import "../../../utils/constants.scss";
 
 .education {
   @include flex-center();
@@ -17,6 +17,8 @@
   @include indent-null();
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
   width: 100%;
 }

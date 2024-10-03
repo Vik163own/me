@@ -1,4 +1,4 @@
-@import '../../../utils/constants.scss';
+@import "../../../utils/constants.scss";
 
 .about-me__additional-info {
   box-sizing: border-box;
@@ -35,4 +35,8 @@
   font-size: 18px;
   font-style: italic;
   margin: 0;
+
+  li {
+    margin-bottom: 9px;
+  }
 }

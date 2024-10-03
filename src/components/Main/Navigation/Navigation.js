@@ -97,7 +97,7 @@ export function Navigation({ handleAddInfo, isNameAddInfo }) {
             </button>
           </li>
         </ul>
-      </div>{" "}
+      </div>
     </div>
   );
 }
