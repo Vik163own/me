@@ -69,7 +69,9 @@ export function EducationElement({ card }) {
           </a>
         </p>
         {card.description.map((item) => (
-          <p className="education__description">&nbsp;{item}</p>
+          <p key={item} className="education__description">
+            &nbsp;{item}
+          </p>
         ))}
       </li>
       <Diplomas name={name} isOpen={isOpen} closePopup={closePopup} />

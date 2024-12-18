@@ -1,20 +1,32 @@
-import React from 'react';
-import './skills.scss';
-import './skills-adapt.scss';
+import React from "react";
+import "./skills.scss";
+import "./skills-adapt.scss";
 
-import { SkillsElement } from '../../skills-element/skills-element';
+import { SkillsElement } from "../../skills-element/skills-element";
 import {
   scillsSpecialInfo,
   scillsAdditionalInfo,
-} from '../../../utils/constants';
+} from "../../../utils/constants";
 
 function Skills() {
   return (
-    <section className='skills' id='skillsId'>
-      <h2 className='skills__title'>НАВЫКИ</h2>
-      <div className='skills__container'>
-        <h3 className='skills__subtitle'>ПРОФЕССИОНАЛЬНЫЕ</h3>
-        <ul className='skills__special-container'>
+    <section className="skills" id="skillsId">
+      <h2 className="skills__title">НАВЫКИ</h2>
+
+      <a
+        href="https://pizzashop63.online/"
+        target="_blank"
+        rel="noreferrer"
+        className="skills__link "
+      >
+        pet-проект -{" "}
+        <span className="skills__link_color_blue">
+          интернет-магазин "Доставка пиццы"
+        </span>
+      </a>
+      <div className="skills__container">
+        <h3 className="skills__subtitle">ПРОФЕССИОНАЛЬНЫЕ</h3>
+        <ul className="skills__special-container">
           {scillsSpecialInfo.map((item, index) => (
             <SkillsElement
               key={index}
@@ -24,8 +36,8 @@ function Skills() {
             />
           ))}
         </ul>
-        <h3 className='skills__subtitle'>ДОПОЛНИТЕЛЬНЫЕ</h3>
-        <ul className='skills__additional-container'>
+        <h3 className="skills__subtitle">ДОПОЛНИТЕЛЬНЫЕ</h3>
+        <ul className="skills__additional-container">
           {scillsAdditionalInfo.map((item, index) => (
             <SkillsElement key={index} name={item.name} />
           ))}

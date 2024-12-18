@@ -1,4 +1,4 @@
-@import '../../../utils/constants.scss';
+@import "../../../utils/constants.scss";
 
 @media (max-width: 1000px) {
   .skills__title {
@@ -39,10 +39,24 @@
   }
 }
 
+@media (max-width: 540px) {
+  .skills__link {
+    width: 280px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 410px) {
   .skills__title {
     @include text(20px, 28px, 500);
     margin: 430px 0 10px;
+  }
+
+  .skills__link {
+    margin-bottom: 20px;
+    font-size: 14px;
   }
 
   .skills__container {

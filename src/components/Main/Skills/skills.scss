@@ -1,4 +1,4 @@
-@import '../../../utils/constants.scss';
+@import "../../../utils/constants.scss";
 
 .skills {
   @include flex-center();
@@ -13,6 +13,17 @@
   color: rgb(77, 174, 212);
   letter-spacing: -1px;
   margin: 510px 0 70px;
+}
+
+.skills__link {
+  text-decoration: none;
+  margin-bottom: 30px;
+  color: #2e4661;
+  font-size: 20px;
+}
+
+.skills__link_color_blue {
+  color: rgb(2, 92, 134);
 }
 
 .skills__container {
