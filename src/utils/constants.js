@@ -37,10 +37,11 @@ export const scillsSpecialInfo = [
     caption: null,
   },
   {
-    name: "Webpack",
+    name: "Redux",
     procents: null,
-    caption: null,
+    caption: ["Redux Toolkit", "store", "actions", "reducers", "redux-thunk"],
   },
+
   { name: "MongoDB", procents: null, caption: ["Mongoose"] },
   {
     name: "Адаптивная верстка",
@@ -48,9 +49,9 @@ export const scillsSpecialInfo = [
     caption: null,
   },
   {
-    name: "Redux",
+    name: "RTK Query",
     procents: null,
-    caption: ["Redux Toolkit", "store", "actions", "reducers", "redux-thunk"],
+    caption: null,
   },
   {
     name: "REST API",
@@ -59,11 +60,16 @@ export const scillsSpecialInfo = [
   },
   { name: "Git", procents: null, caption: null },
   {
-    name: "Feature-Sliced Design",
+    name: "Webpack",
     procents: null,
     caption: null,
   },
   { name: "WebSocket", procents: null, caption: null },
+  {
+    name: "Feature-Sliced Design",
+    procents: null,
+    caption: null,
+  },
   {
     name: "TypeScript",
     procents: null,
