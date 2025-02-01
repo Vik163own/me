@@ -56,9 +56,27 @@ export function EducationElement({ card }) {
             <p className="education__button-text">Диплом</p>
           </button>
         )}
-        <p className="education__info">
-          <img className="education__icon" src={university} alt="sheet" />
-          {card.dataId ? "Дипломный проект" : "Проект"}
+        {card.description.length > 0 ? (
+          <>
+            <p className="education__info">
+              <img className="education__icon" src={university} alt="sheet" />
+              {card.dataId ? "Дипломный проект" : "Проект"}
+              <a
+                className="education__link"
+                href={card.gh}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {card.project}
+              </a>
+            </p>
+            {card.description.map((item) => (
+              <p key={item} className="education__description">
+                &nbsp;{item}
+              </p>
+            ))}
+          </>
+        ) : (
           <a
             className="education__link"
             href={card.gh}
@@ -67,12 +85,7 @@ export function EducationElement({ card }) {
           >
             {card.project}
           </a>
-        </p>
-        {card.description.map((item) => (
-          <p key={item} className="education__description">
-            &nbsp;{item}
-          </p>
-        ))}
+        )}
       </li>
       <Diplomas name={name} isOpen={isOpen} closePopup={closePopup} />
     </>
