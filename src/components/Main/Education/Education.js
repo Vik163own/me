@@ -3,7 +3,7 @@ import React from "react";
 import "./Education.scss";
 import "./education-adapt.scss";
 
-import { courses, education } from "../../../utils/constants";
+import { courses, education } from "../../../constants/educations";
 
 import { EducationElement } from "../education-element/education-element";
 

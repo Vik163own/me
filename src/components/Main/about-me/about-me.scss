@@ -1,4 +1,4 @@
-@import '../../../utils/constants.scss';
+@import "../../../style/constants.scss";
 
 .about-me {
   position: relative;
@@ -65,7 +65,7 @@
 }
 
 .about-me__title-name {
-  color: rgb(77, 174, 212);
+  color: var(--blue-color);
 }
 
 .about-me__subtitle {
@@ -90,7 +90,7 @@
 }
 
 .about-me__contact {
-  color: rgb(107, 107, 107);
+  color: var(--light-grey-color);
   position: relative;
   width: 50%;
   height: 30px;

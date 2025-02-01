@@ -3,10 +3,7 @@ import "./skills.scss";
 import "./skills-adapt.scss";
 
 import { SkillsElement } from "../../skills-element/skills-element";
-import {
-  scillsSpecialInfo,
-  scillsAdditionalInfo,
-} from "../../../utils/constants";
+import { skillsSpecialInfo, skillsDizainInfo } from "../../../constants/skills";
 
 function Skills() {
   return (
@@ -27,7 +24,7 @@ function Skills() {
       <div className="skills__container">
         <h3 className="skills__subtitle">ПРОФЕССИОНАЛЬНЫЕ</h3>
         <ul className="skills__special-container">
-          {scillsSpecialInfo.map((item, index) => (
+          {skillsSpecialInfo.map((item, index) => (
             <SkillsElement
               key={index}
               name={item.name}
@@ -38,7 +35,7 @@ function Skills() {
         </ul>
         <h3 className="skills__subtitle">ДОПОЛНИТЕЛЬНЫЕ</h3>
         <ul className="skills__additional-container">
-          {scillsAdditionalInfo.map((item, index) => (
+          {skillsDizainInfo.map((item, index) => (
             <SkillsElement key={index} name={item.name} />
           ))}
         </ul>

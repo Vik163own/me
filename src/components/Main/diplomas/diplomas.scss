@@ -1,9 +1,9 @@
-@import '../../../utils/constants.scss';
+@import "../../../style/constants.scss";
 
 .diplomas__container-image {
   width: 950px;
   max-height: calc(100vh - 20px);
-  background-color: white;
+  background-color: var(--bg-block-color);
   position: fixed;
   top: 10px;
   left: calc((100% - 950px) / 2);
@@ -24,5 +24,5 @@
   z-index: 12;
   cursor: pointer;
   padding: 3px;
-  border: 1px solid black;
+  border: 1px solid var(--black-color);
 }

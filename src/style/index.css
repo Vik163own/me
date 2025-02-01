@@ -1,0 +1,24 @@
+:root {
+  /* Размеры */
+
+  /* Цвета */
+  --bg-color: rgb(245, 243, 241);
+  --bg-block-color: white;
+
+  --black-color: black;
+  --blue-color: rgb(77, 174, 212);
+  --blue-dark-color: rgb(2, 92, 134);
+  --title-color: #2e4661;
+  --link-color: rgb(2, 48, 134);
+  --light-grey-color: rgb(107, 107, 107)
+
+  --special-shadow-color: rgba(77, 174, 212, 0.2);
+  --shadow-color: rgb(175, 175, 175);
+
+  --yellow-border-color: rgb(212, 187, 77);
+
+  --btn-active-color: rgb(247, 247, 247);
+}
+
+@import url(normalize.css);
+@import url(fonts/inter.css);

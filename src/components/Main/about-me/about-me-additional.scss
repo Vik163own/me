@@ -1,4 +1,4 @@
-@import "../../../utils/constants.scss";
+@import "../../../style/constants.scss";
 
 .about-me__additional-info {
   box-sizing: border-box;
@@ -22,7 +22,7 @@
   font-style: italic;
   display: flex;
   text-decoration: none;
-  color: rgb(10, 84, 142);
+  color: var(--blue-color);
 }
 
 .additional-info__text {

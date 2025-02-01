@@ -1,9 +1,9 @@
-$shadow-color: rgb(175, 175, 175);
+$shadow-color: var(--shadow-color);
 $shadow-block: 0 0 2px 2px $shadow-color;
 $shadow-border: 0 0 1px 1px $shadow-color;
 $inner-shadow: inset 1px 1px 0 0 $shadow-color;
-$bkg-color: white;
-$text-color: black;
+$bkg-color: var(--bg-block-color);
+$text-color: var(--black-color);
 
 @mixin block($sw, $smw, $sh, $zi) {
   position: absolute;

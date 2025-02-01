@@ -1,4 +1,4 @@
-@import "../../../utils/constants.scss";
+@import "../../../style/constants.scss";
 
 .skills {
   @include flex-center();
@@ -10,7 +10,7 @@
 
 .skills__title {
   @include text(32px, 32px, 500);
-  color: rgb(77, 174, 212);
+  color: var(--blue-color);
   letter-spacing: -1px;
   margin: 510px 0 70px;
 }
@@ -18,12 +18,12 @@
 .skills__link {
   text-decoration: none;
   margin-bottom: 30px;
-  color: #2e4661;
+  color: var(--title-color);
   font-size: 20px;
 }
 
 .skills__link_color_blue {
-  color: rgb(2, 92, 134);
+  color: var(--blue-dark-color);
 }
 
 .skills__container {
@@ -36,7 +36,7 @@
 .skills__subtitle {
   max-width: 265px;
   width: 100%;
-  color: #2e4661;
+  color: var(--title-color);
   font-weight: 500;
   text-align: center;
 }

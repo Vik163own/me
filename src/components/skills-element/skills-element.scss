@@ -1,4 +1,4 @@
-@import '../../utils/constants.scss';
+@import "../../style/constants.scss";
 
 :root {
   --scale: 0;
@@ -9,7 +9,7 @@
   width: 270px;
   position: relative;
   display: inline-block;
-  border: 1px solid rgb(77, 174, 212);
+  border: 1px solid var(--blue-color);
   background-color: $bkg-color;
   color: rgb(31, 30, 30);
   text-decoration: none;
@@ -21,7 +21,7 @@
   cursor: default;
 
   &:hover {
-    background-color: rgb(245, 243, 241);
+    background-color: var(--bg-color);
   }
 
   &:hover .skills__special-shadow {
@@ -39,7 +39,7 @@
   position: absolute;
   width: 0;
   height: 100%;
-  background-color: rgba(77, 174, 212, 0.2);
+  background-color: var(--special-shadow-color);
   transition: 0.5s;
 }
 
@@ -52,7 +52,7 @@
   text-align: end;
   width: 100%;
   transition: 0.2s;
-  color: rgb(54, 118, 143);
+  color: var(--blue-color);
 }
 
 .scills__caption {
@@ -61,7 +61,7 @@
   left: -5%;
   z-index: 5;
   display: inline-block;
-  border: 1px solid rgb(212, 187, 77);
+  border: 1px solid var(--yellow-border-color);
   background-color: $bkg-color;
   color: rgb(31, 30, 30);
   border-radius: 4px;
@@ -72,15 +72,16 @@
   box-shadow: 1px 1px 1px 0 $shadow-color;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -5px;
     left: calc(50% - 5px);
     width: 7px;
     height: 7px;
-    background-color: white;
-    border: 1px solid rgb(212, 187, 77);
-    border-color: rgb(212, 187, 77) transparent transparent rgb(212, 187, 77);
+    background-color: var(--bg-block-color);
+    border: 1px solid var(--yellow-border-color);
+    border-color: var(--yellow-border-color) transparent transparent
+      var(--yellow-border-color);
     transform: rotate(45deg);
     z-index: -1;
   }
