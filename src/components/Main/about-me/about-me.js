@@ -8,7 +8,7 @@ import "./about-me-additional-adapt.scss";
 import { Navigation } from "../Navigation/Navigation";
 
 import foto from "../../../images/me.jpg";
-import downloadIcon from "../../../images/download_icon.svg";
+import { ReactComponent as Icon } from "../../../images/download_icon.svg";
 import resume from "../../../images/Puzikov_resume.pdf";
 import { AboutMeAdditional } from "./about-me-additional";
 
@@ -67,11 +67,7 @@ function AboutMe() {
         <div className="about-me__image-container">
           <img className="about-me__foto" src={foto} alt="фото" />
           <a className="about-me__download button-hover" href={resume} download>
-            <img
-              className="about-me__download-icon"
-              src={downloadIcon}
-              alt="download"
-            />
+            <Icon className="about-me__download-icon" />
             СКАЧАТЬ РЕЗЮМЕ
           </a>
         </div>
@@ -95,9 +91,7 @@ function AboutMe() {
           </li>
           <li className="about-me__contact">
             Адрес
-            <span className="about-me__contacts-data">
-              Самара Новокуйбышевск
-            </span>
+            <span className="about-me__contacts-data">Новокуйбышевск</span>
           </li>
           <li className="about-me__contact">
             Телефон

@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import "./education-element.scss";
 import "./education-element-adapt.scss";
 
-import sheet from "../../../images/диплом.png";
-import university from "../../../images/sheet_pen.svg";
+import { ReactComponent as IconSheet } from "../../../images/diploma.svg";
+import { ReactComponent as IconUniver } from "../../../images/sheet_pen.svg";
 
 import { Diplomas } from "../diplomas/diplomas";
 
@@ -52,24 +52,24 @@ export function EducationElement({ card }) {
             // onBlur={null}
             type="button"
           >
-            <img className="education__icon" src={sheet} alt="sheet" />
+            <IconSheet className="education__icon" />
             <p className="education__button-text">Диплом</p>
           </button>
         )}
         {card.description.length > 0 ? (
           <>
-            <p className="education__info">
-              <img className="education__icon" src={university} alt="sheet" />
+            <a
+              className="education__link"
+              href={card.gh}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IconUniver className="education__icon" />
               {card.dataId ? "Дипломный проект" : "Проект"}
-              <a
-                className="education__link"
-                href={card.gh}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {card.project}
-              </a>
-            </p>
+
+              {card.project}
+            </a>
+
             {card.description.map((item) => (
               <p key={item} className="education__description">
                 &nbsp;{item}

@@ -16,10 +16,8 @@ function Skills() {
         rel="noreferrer"
         className="skills__link "
       >
-        pet-проект -{" "}
-        <span className="skills__link_color_blue">
-          интернет-магазин "Доставка пиццы"
-        </span>
+        pet-проект - интернет-магазин{" "}
+        <span className="skills__link_color_blue">"Доставка пиццы"</span>
       </a>
       <div className="skills__container">
         <h3 className="skills__subtitle">ПРОФЕССИОНАЛЬНЫЕ</h3>

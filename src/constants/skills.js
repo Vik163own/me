@@ -12,33 +12,38 @@ export const skillsSpecialInfo = [
   {
     name: "JS",
     procents: null,
-    caption: ["DOM", "ООП", "События", "Валидация форм"],
+    caption: null,
+    // caption: ["DOM", "ООП", "События", "Валидация форм"],
   },
   {
     name: "Express.js",
     procents: null,
-    caption: ["Роутинг", "middlewares", "CORS"],
+    caption: null,
+    // caption: ["Роутинг", "middlewares", "CORS"],
   },
   {
     name: "CSS",
     procents: null,
-    caption: ["flex", "grid", "module"],
+    caption: null,
+    // caption: ["flex", "grid", "module"],
   },
   {
     name: "React",
     procents: null,
-    caption: [
-      "Функциональные компоненты",
-      "Классовые компоненты",
-      "Хуки",
-      "React Router",
-      "Lazy",
-    ],
+    caption: null,
+    // caption: [
+    //   "Функциональные компоненты",
+    //   "Классовые компоненты",
+    //   "Хуки",
+    //   "React Router",
+    //   "Lazy",
+    // ],
   },
   {
     name: "NestJS",
     procents: null,
-    caption: ["Caching", "Session"],
+    caption: null,
+    // caption: ["Caching", "Session"],
   },
   {
     name: "SCSS",
@@ -46,12 +51,13 @@ export const skillsSpecialInfo = [
     caption: null,
   },
   {
-    name: "Redux",
+    name: "Redux Toolkit",
     procents: null,
-    caption: ["Redux Toolkit", "store", "actions", "reducers", "redux-thunk"],
+    caption: null,
+    // caption: ["Redux Toolkit", "store", "actions", "reducers", "redux-thunk"],
   },
 
-  { name: "MongoDB", procents: null, caption: ["Mongoose"] },
+  { name: "MongoDB", procents: null, caption: null },
   {
     name: "Адаптивная верстка",
     procents: null,
@@ -65,7 +71,7 @@ export const skillsSpecialInfo = [
   {
     name: "REST API",
     procents: null,
-    caption: ["Fetch", "Axios"],
+    caption: null,
   },
   { name: "Git", procents: null, caption: null },
   {
@@ -88,6 +94,7 @@ export const skillsSpecialInfo = [
   {
     name: "Деплой",
     procents: null,
-    caption: ["Создание сервера", "pm2", "nginx", "CORS"],
+    caption: null,
+    // caption: ["Создание сервера", "pm2", "nginx", "CORS"],
   },
 ];

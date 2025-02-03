@@ -9,7 +9,7 @@
   width: 270px;
   position: relative;
   display: inline-block;
-  border: 1px solid var(--blue-color);
+  border: 1px solid var(--title-color);
   background-color: $bkg-color;
   color: rgb(31, 30, 30);
   text-decoration: none;
@@ -20,19 +20,19 @@
   box-shadow: 1px 1px 1px 0 $shadow-color;
   cursor: default;
 
-  &:hover {
-    background-color: var(--bg-color);
-  }
+  // &:hover {
+  //   background-color: var(--btn-hover-bg-color);
+  // }
 
-  &:hover .skills__special-shadow {
-    width: var(--scale);
-    transition: 0.5s;
-  }
+  // &:hover .skills__special-shadow {
+  //   width: var(--scale);
+  //   transition: 0.5s;
+  // }
 
-  &:hover .skills__special-procents {
-    opacity: 1;
-    transition: 0.2s;
-  }
+  // &:hover .skills__special-procents {
+  //   opacity: 1;
+  //   transition: 0.2s;
+  // }
 }
 
 .skills__special-shadow {
@@ -52,7 +52,7 @@
   text-align: end;
   width: 100%;
   transition: 0.2s;
-  color: var(--blue-color);
+  color: var(--title-color);
 }
 
 .scills__caption {

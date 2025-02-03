@@ -10,7 +10,7 @@
 
 .skills__title {
   @include text(32px, 32px, 500);
-  color: var(--blue-color);
+  color: var(--title-color);
   letter-spacing: -1px;
   margin: 510px 0 70px;
 }
@@ -18,12 +18,9 @@
 .skills__link {
   text-decoration: none;
   margin-bottom: 30px;
-  color: var(--title-color);
-  font-size: 20px;
-}
-
-.skills__link_color_blue {
-  color: var(--blue-dark-color);
+  color: var(--link-color);
+  font-size: 18px;
+  // font-style: italic;
 }
 
 .skills__container {

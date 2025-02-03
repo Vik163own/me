@@ -11,7 +11,7 @@
 
 .education__title-item {
   margin: 0;
-  color: var(--blue-color);
+  color: var(--title-color);
 }
 
 .education__specialization {
@@ -34,7 +34,7 @@
   background-color: var(--bg-block-color);
   border: none;
   padding: 0;
-  color: var(--blue-dark-color);
+  color: var(--link-color);
   cursor: pointer;
   &:nth-of-type(2) {
     margin: 0;
@@ -53,9 +53,10 @@
 .education__icon {
   margin-right: 10px;
   width: 15px;
+  fill: var(--link-color);
 }
 
-.education__info {
+.education__link {
   @include text(16px, 18px, 400);
   display: flex;
   align-items: center;
@@ -63,11 +64,7 @@
   &:nth-of-type(2) {
     margin: 0;
   }
-}
-
-.education__link {
   text-decoration: none;
-  margin-left: 5px;
   color: var(--link-color);
 }
 

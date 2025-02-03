@@ -48,9 +48,11 @@
     box-shadow: $inner-shadow;
   }
 }
+
 .about-me__download-icon {
   width: 20px;
   margin-right: 10px;
+  fill: var(--link-color);
 }
 
 .about-me__description-container {
@@ -65,7 +67,7 @@
 }
 
 .about-me__title-name {
-  color: var(--blue-color);
+  color: var(--title-color);
 }
 
 .about-me__subtitle {
