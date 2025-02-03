@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.0b563a6c.css",
+    "main.css": "/me/static/css/main.47637c27.css",
     "main.js": "/me/static/js/main.2a69b1db.js",
     "static/media/Puzikov_resume.pdf": "/me/static/media/Puzikov_resume.d518025410f8b6ee0063.pdf",
     "static/media/Inter-Medium.ttf": "/me/static/media/Inter-Medium.9cbff87dc577185b8630.ttf",
@@ -25,11 +25,11 @@
     "static/media/vk_icon.svg": "/me/static/media/vk_icon.d22b8b1a38d09bc3a0c219306462c2c4.svg",
     "index.html": "/me/index.html",
     "static/media/closeIcon.svg": "/me/static/media/closeIcon.c87df535f71ead23a6f590ce31cd0de1.svg",
-    "main.0b563a6c.css.map": "/me/static/css/main.0b563a6c.css.map",
+    "main.47637c27.css.map": "/me/static/css/main.47637c27.css.map",
     "main.2a69b1db.js.map": "/me/static/js/main.2a69b1db.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b563a6c.css",
+    "static/css/main.47637c27.css",
     "static/js/main.2a69b1db.js"
   ]
 }
