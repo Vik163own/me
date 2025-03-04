@@ -12,8 +12,9 @@ import { ReactComponent as Icon } from "../../../images/download_icon.svg";
 import resume from "../../../images/Puzikov_resume.pdf";
 import { AboutMeAdditional } from "./about-me-additional";
 
-function AboutMe() {
+function AboutMe({ setIsHidden }) {
   const [isAddInfoOpen, setIsAddInfoOpen] = useState(false);
+  console.log("isAddInfoOpen:", isAddInfoOpen);
   const [isNameAddInfo, setIsNameAddInfo] = useState("");
   const [classAddInfo, setClassAddInfo] = useState("");
 
@@ -29,12 +30,14 @@ function AboutMe() {
         setClassAddInfo(`about-me__additional-info_active`);
         setIsNameAddInfo(name);
         setIsAddInfoOpen(true);
+        setIsHidden(true);
       }, 200);
     } else if (!name) {
       setTimeout(() => {
         setClassAddInfo("");
         setIsNameAddInfo(name);
         setIsAddInfoOpen(!isAddInfoOpen);
+        setIsHidden(!isAddInfoOpen);
       }, 200);
     }
   };

@@ -10,26 +10,20 @@ export function AboutMeAdditional(props) {
         <>
           <h2 className="about-me__title">О себе</h2>
           <p className="additional-info__text">
-            - Кто я? Тот, кто хочет изменить свою жизнь к лучшему.
+            <b>- Кто я?</b>
             <br />
-            - Что у меня есть? Это моя семья и обязанность сделать так, чтобы
-            они ни в чём не нуждались, а также есть желание не стоять на месте и
-            развиваться самому.
+            &emsp;- Тот, кто живёт веб-разработкой!
             <br />
-            - Чего у меня нет? Вредных привычек и любимой работы.
+            <b>- Что мне нравиться?</b> <br />
+            &emsp;- Нравиться что-то делать, что-то создавать!
             <br />
-            - Что мне нравиться? Нравиться что-то делать, что-то создавать!
-            <br />- Что мне не нравиться? Сидеть без дела!
-            <br />- Что я хочу? Найти интересную, перспективную и
-            высокооплачиваемую работу веб-разработчика.
+            <b>- Что я хочу?</b> <br />
+            &emsp;- Работать в IT-компании, которая создаёт крутые
+            веб-приложения!
           </p>
           <p className="additional-info__text">
-            &ensp;Много лет я был предпринимателем, связанным с работой в
-            области фотографии и дизайна.
-          </p>
-          <p className="additional-info__text">
-            &ensp;Свой фотосалон, работа за компьютером и постоянное общение с
-            людьми развили во мне такие качества, как:
+            &ensp;Много лет я был связан с работой в области фотографии и
+            дизайна, которая развила во мне такие качества, как:
           </p>
           <br />
 
@@ -78,51 +72,97 @@ export function AboutMeAdditional(props) {
         <>
           <h2 className="about-me__title">Опыт</h2>
           <p className="additional-info__text">
-            Об опыте разработки рассказать могу немного.
-            <br /> Это pet-проект интернет-магазина (frontend, backend).
-            <a
-              className="additional-info__link"
-              href="https://pizzashop63.online/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Доставка пиццы
-            </a>
-            <br /> Учебные проекты курсов и самостоятельная работа по развитию
-            навыков.
-            <br />
+            &ensp;Это самостоятельные работы по развитию навыков, фриланс и
+            учебные проекты курсов.{" "}
             <a
               className="additional-info__link"
               href="https://github.com//Vik163"
               target="_blank"
               rel="noreferrer"
             >
-              Посмотреть можно здесь &#8594; &ensp;
+              &ensp;Посмотреть можно здесь &#8594; &ensp;
               <img className="about-me__link-icon" src={gitIcon} alt="Гитхаб" />
             </a>
-          </p>
-          <p className="additional-info__text">
-            &ensp;Все работы выполняю используя полученные знания.
-            <br /> &ensp;Самостоятельно изучаю необходимые материалы, а когда
-            оказываюсь в тупике помогает поиск в интернете.
             <br />
-            <br /> &ensp;Во время обучения выполняемые работы проверялись
-            ревьюерами, которые указывали на ошибки, недочеты и несовершенство
-            кода. И только после устранения всех недостатков принимались.
+            &ensp;Кратко опишу одну из работ и стёк технологий, которые в ней
+            использовал.
+            <br />
+            <br />
+            &ensp;Самостоятельная проектная работа (frontend, backend) -
+            <a
+              className="additional-info__link"
+              href="https://pizzashop63.online/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Интернет магазин по доставке еды
+            </a>
+            <br />
+            &ensp;Логику клиентской части проекта реализовал на React,
+            TypeScript.
+            <a
+              className="additional-info__link"
+              href="https://github.com/Vik163/shop-pizza-pet-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://github.com/Vik163/shop-pizza-pet-project
+            </a>
+            &ensp;Состояние приложения - Context, Redux Toolkit. <br />
+            &ensp;Запросы - RTK Query, Axios. <br />
+            &ensp;Применил адаптивную верстку и семантику в HTML. Стили - SCSS,
+            CSS-modules. <br />
+            &ensp;Архитектура - Feature-Sliced Design (FSD ) <br />
+            &ensp;Добавил регистрацию, авторизацию (Firebase по номеру телефона
+            и Яндекс ID), Lazy, темы, пагинация. <br />
+            &ensp;Сборка - Webpack <br />
+            <br />
+            &ensp;Серверную часть выполнил на Nest.js, база данных MongoDB
+            <a
+              className="additional-info__link"
+              href="https://github.com/Vik163/shop-pizza-pet-project_api"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://github.com/Vik163/shop-pizza-pet-project_api
+            </a>
+            <br />
+            &ensp;Деплой на виртуальном сервере SpaceWeb. ОС Ubuntu. Использовал
+            Git, Nginx, Pm2
+            <br />
+            <br /> &ensp;И учебные проекты курсов: «react-разработчик» и
+            «веб-разработчик» с использованием React, React-Router, Redux,
+            TypeScript, WebSocket, Express.js и MongoDB, адаптивной верстки,
+            методологии БЭМ с регистрацией и авторизацией.
           </p>
-          <p className="additional-info__text">Таких этапов было:</p>
-          <ul className="additional-info__list">
-            <li>
-              за время обучения на веб-разработке - пятнадцать курсовых и
-              дипломная работа
-            </li>
-            <li>react-разработчик - шесть курсовых</li>
-            <li>
-              продвинутый frontend - самостоятельная работа (уже было понимание,
-              какие ошибки падают и как их устранять)
-            </li>
-            <li>последним делал проект интернет-магазина</li>
-          </ul>
+          <a
+            className="additional-info__link"
+            href="https://github.com/Vik163/react-burger"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://github.com/Vik163/react-burger
+          </a>
+          <a
+            className="additional-info__link"
+            href="https://github.com/Vik163/movies-explorer-frontend"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://github.com/Vik163/movies-explorer-frontend
+          </a>
+          <a
+            className="additional-info__link"
+            href="https://github.com/Vik163/movies-explorer-api"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://github.com/Vik163/movies-explorer-api
+          </a>
+          <p className="additional-info__text">
+            &ensp;Учебные работы выполнялись при содействии опытных наставников
+            и были тщательно проверены ревьюерами.
+          </p>
         </>
       )}
     </div>

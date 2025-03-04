@@ -7,23 +7,25 @@ import { courses, education } from "../../../constants/educations";
 
 import { EducationElement } from "../education-element/education-element";
 
-export function Education() {
+export function Education({ isHidden }) {
   return (
-    <section id="educationId" className="education">
-      <h2 className="education__title">КУРСЫ</h2>
-      <ul className="education__container">
-        {courses &&
-          courses.map((card, index) => (
-            <EducationElement card={card} key={index} />
-          ))}
-      </ul>
-      <h2 className="education__title">ОБРАЗОВАНИЕ</h2>
-      <ul className="education__container">
-        {education &&
-          education.map((card, index) => (
-            <EducationElement card={card} key={index} />
-          ))}
-      </ul>
-    </section>
+    !isHidden && (
+      <section id="educationId" className="education">
+        <h2 className="education__title">КУРСЫ</h2>
+        <ul className="education__container">
+          {courses &&
+            courses.map((card, index) => (
+              <EducationElement card={card} key={index} />
+            ))}
+        </ul>
+        <h2 className="education__title">ОБРАЗОВАНИЕ</h2>
+        <ul className="education__container">
+          {education &&
+            education.map((card, index) => (
+              <EducationElement card={card} key={index} />
+            ))}
+        </ul>
+      </section>
+    )
   );
 }
