@@ -14,7 +14,6 @@ import { AboutMeAdditional } from "./about-me-additional";
 
 function AboutMe({ setIsHidden }) {
   const [isAddInfoOpen, setIsAddInfoOpen] = useState(false);
-  console.log("isAddInfoOpen:", isAddInfoOpen);
   const [isNameAddInfo, setIsNameAddInfo] = useState("");
   const [classAddInfo, setClassAddInfo] = useState("");
 
@@ -90,7 +89,7 @@ function AboutMe({ setIsHidden }) {
         </div>
         <ul className="about-me__contacts">
           <li className="about-me__contact">
-            Возраст <span className="about-me__contacts-data">49</span>
+            Возраст <span className="about-me__contacts-data">50</span>
           </li>
           <li className="about-me__contact">
             Адрес
